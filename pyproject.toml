@@ -1,0 +1,25 @@
+[project]
+name = "grpo-reasoning"
+version = "0.1.0"
+description = "GRPO from scratch on the Countdown task with Qwen2.5-0.5B-Instruct"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "matplotlib==3.11.2",
+    "numpy==2.5.4",
+    "peft==0.21.2",
+    "safetensors==0.8.0",
+    "torch==2.14.1",
+    "transformers==4.57.6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/grpo"]
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+]

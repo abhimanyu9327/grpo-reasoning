@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+weights/
+results/*/checkpoints/
+.DS_Store
