@@ -1,0 +1,706 @@
+[
+  {
+    "numbers": [
+      9,
+      19,
+      19
+    ],
+    "target": 29,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n9 + 19 + 19\n</think>\n<answer>(9 + 19 + 19)</answer>"
+  },
+  {
+    "numbers": [
+      9,
+      19,
+      19
+    ],
+    "target": 29,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n29 = (9 + 19 - 19) \n</think>\n<answer>(9 + 19 - 19)</answer>"
+  },
+  {
+    "numbers": [
+      9,
+      19,
+      19
+    ],
+    "target": 29,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n9 + (19 + 19)\n</think>\n<answer>(9 + (19 + 19))</answer>"
+  },
+  {
+    "numbers": [
+      9,
+      19,
+      19
+    ],
+    "target": 29,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n19 + 9 + 19\n</think>\n<answer>(19 + 9 + 19)</answer>"
+  },
+  {
+    "numbers": [
+      9,
+      19,
+      19
+    ],
+    "target": 29,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n9 + (19 + 19)\n</thought>\n<answer>(9 + (19 + 19))</answer>"
+  },
+  {
+    "numbers": [
+      9,
+      19,
+      19
+    ],
+    "target": 29,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n19 + (19 + 19)\n</think>\n<answer>(19 + (19 + 19))</answer>"
+  },
+  {
+    "numbers": [
+      9,
+      19,
+      19
+    ],
+    "target": 29,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n9 + 9 + 9\n</think>\n<answer>(9 + 9 + 9)</answer>"
+  },
+  {
+    "numbers": [
+      9,
+      19,
+      19
+    ],
+    "target": 29,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n9 + (19 + 19)\n</think>\n<answer>(9 + (19 + 19))</answer>"
+  },
+  {
+    "numbers": [
+      20,
+      15,
+      13
+    ],
+    "target": 48,
+    "reward": 1.0,
+    "advantage": 0.725,
+    "response": "<think>\n20 + (15 + 13)\n</thought>\n<answer>(20 + (15 + 13))</answer>"
+  },
+  {
+    "numbers": [
+      20,
+      15,
+      13
+    ],
+    "target": 48,
+    "reward": 1.0,
+    "advantage": 0.725,
+    "response": "<think>\n48 = 20 + 15 + 13\n</think>\n<answer>(20 + 15 + 13)</answer>"
+  },
+  {
+    "numbers": [
+      20,
+      15,
+      13
+    ],
+    "target": 48,
+    "reward": 0.10000000149011612,
+    "advantage": -1.208,
+    "response": "<think>\n20 + (15 - 13)\n</think>\n<answer>(20 + (15 - 13))</answer>"
+  },
+  {
+    "numbers": [
+      20,
+      15,
+      13
+    ],
+    "target": 48,
+    "reward": 1.0,
+    "advantage": 0.725,
+    "response": "<think>\n48\n</think>\n<answer>(20 + (15 + 13))</answer>"
+  },
+  {
+    "numbers": [
+      20,
+      15,
+      13
+    ],
+    "target": 48,
+    "reward": 1.0,
+    "advantage": 0.725,
+    "response": "<think>\n48 = (20 + 15 + 13)\n</thought>\n<answer>(20 + 15 + 13)</answer>"
+  },
+  {
+    "numbers": [
+      20,
+      15,
+      13
+    ],
+    "target": 48,
+    "reward": 0.10000000149011612,
+    "advantage": -1.208,
+    "response": "<think>\n20 + (15 - 13) = 48\n</think>\n<answer>(20 + (15 - 13))</answer>"
+  },
+  {
+    "numbers": [
+      20,
+      15,
+      13
+    ],
+    "target": 48,
+    "reward": 1.0,
+    "advantage": 0.725,
+    "response": "<think>\n20 + (15 + 13)\n</thought>\n<answer>(20 + (15 + 13))</answer>"
+  },
+  {
+    "numbers": [
+      20,
+      15,
+      13
+    ],
+    "target": 48,
+    "reward": 0.10000000149011612,
+    "advantage": -1.208,
+    "response": "<think>\n48 = (20 + 15 + 13) * (20 + 15 + 13)\n</think>\n<answer>(20 + 15 + 13) * (20 + 15 + 13)</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      19,
+      12
+    ],
+    "target": 26,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n19 + 19 + 12\n</think>\n<answer>(19 + 19 + 12)</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      19,
+      12
+    ],
+    "target": 26,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n26\n</think>\n<answer>(19 + 19 + 12)</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      19,
+      12
+    ],
+    "target": 26,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n26 = 19 + 19 + 12\n</think>\n<answer>(19 + 19 + 12)</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      19,
+      12
+    ],
+    "target": 26,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n19 + 19 + 12\n</Think>\n<answer>(19 + 19 + 12)</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      19,
+      12
+    ],
+    "target": 26,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n19 + (19 + 12)\n</thought>\n<answer>(19 + (19 + 12))</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      19,
+      12
+    ],
+    "target": 26,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n26 = 19 + 19 + 12\n</thought>\n<answer>(19 + 19 + 12)</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      19,
+      12
+    ],
+    "target": 26,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n19 + (19 + 12)\n</thought>\n<answer>(19 + (19 + 12))</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      19,
+      12
+    ],
+    "target": 26,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n19 + 19 + 12\n</thought>\n<answer>(19 + 19 + 12)</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      9,
+      2
+    ],
+    "target": 12,
+    "reward": 1.0,
+    "advantage": 0.725,
+    "response": "<think>\n5 + (9 - 2)\n</think>\n<answer>(5 + (9 - 2))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      9,
+      2
+    ],
+    "target": 12,
+    "reward": 1.0,
+    "advantage": 0.725,
+    "response": "<think>\n5 + (9 - 2)\n</think>\n<answer>(5 + (9 - 2))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      9,
+      2
+    ],
+    "target": 12,
+    "reward": 1.0,
+    "advantage": 0.725,
+    "response": "<think>\n(5 + (9 - 2))\n</think>\n<answer>(5 + (9 - 2))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      9,
+      2
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": -1.208,
+    "response": "<think>\n5 + 9 + 2\n</think>\n<answer>(5 + 9 + 2)</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      9,
+      2
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": -1.208,
+    "response": "<think>\n5 + 9 + 2\n</think>\n<answer>(5 + 9 + 2)</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      9,
+      2
+    ],
+    "target": 12,
+    "reward": 1.0,
+    "advantage": 0.725,
+    "response": "<think>\n5 + (9 - 2)\n</thought>\n<answer>(5 + (9 - 2))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      9,
+      2
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": -1.208,
+    "response": "<think>\n5 + 2 + 9\n</think>\n<answer>(5 + 2 + 9)</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      9,
+      2
+    ],
+    "target": 12,
+    "reward": 1.0,
+    "advantage": 0.725,
+    "response": "<think>\n12\n</thought>\n<answer>(5 + (9 - 2))</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      4,
+      12
+    ],
+    "target": 27,
+    "reward": 1.0,
+    "advantage": 1.208,
+    "response": "<think>\n27\n</think>\n<answer>(19 + (12 - 4))</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      4,
+      12
+    ],
+    "target": 27,
+    "reward": 1.0,
+    "advantage": 1.208,
+    "response": "<think>\n19 + (12 - 4)\n</think>\n<answer>(19 + (12 - 4))</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      4,
+      12
+    ],
+    "target": 27,
+    "reward": 0.10000000149011612,
+    "advantage": -0.725,
+    "response": "<think>\n27 - (19 - 12)\n</think>\n<answer>(19 - (19 - 12))</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      4,
+      12
+    ],
+    "target": 27,
+    "reward": 0.10000000149011612,
+    "advantage": -0.725,
+    "response": "<think>\n19 + (12 + 4)\n</thought>\n<answer>(19 + (12 + 4))</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      4,
+      12
+    ],
+    "target": 27,
+    "reward": 0.10000000149011612,
+    "advantage": -0.725,
+    "response": "<think>\n19 + (4 + 12)\n</thought>\n<answer>(19 + (4 + 12))</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      4,
+      12
+    ],
+    "target": 27,
+    "reward": 1.0,
+    "advantage": 1.208,
+    "response": "<think>\n27 = (19 + (12 - 4))\n</think>\n<answer>(19 + (12 - 4))</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      4,
+      12
+    ],
+    "target": 27,
+    "reward": 0.10000000149011612,
+    "advantage": -0.725,
+    "response": "<think>\n19 + 12 + 4\n</think>\n<answer>(19 + 12 + 4)</answer>"
+  },
+  {
+    "numbers": [
+      19,
+      4,
+      12
+    ],
+    "target": 27,
+    "reward": 0.10000000149011612,
+    "advantage": -0.725,
+    "response": "<think>\n19 - (4 + 12)\n</think>\n<answer>(19 - (4 + 12))</answer>"
+  },
+  {
+    "numbers": [
+      7,
+      14,
+      13
+    ],
+    "target": 34,
+    "reward": 1.0,
+    "advantage": 0.54,
+    "response": "<think>\n7 + 14 + 13 = 34\n</think>\n<answer>(7 + 14 + 13)</answer>"
+  },
+  {
+    "numbers": [
+      7,
+      14,
+      13
+    ],
+    "target": 34,
+    "reward": 0.10000000149011612,
+    "advantage": -1.62,
+    "response": "<think>\n7 + (14 - 13)\n</thought>\n<answer>(7 + (14 - 13))</answer>"
+  },
+  {
+    "numbers": [
+      7,
+      14,
+      13
+    ],
+    "target": 34,
+    "reward": 1.0,
+    "advantage": 0.54,
+    "response": "<think>\n7 + 14 + 13 = 34\n</think>\n<answer>(7 + 14 + 13)</answer>"
+  },
+  {
+    "numbers": [
+      7,
+      14,
+      13
+    ],
+    "target": 34,
+    "reward": 0.10000000149011612,
+    "advantage": -1.62,
+    "response": "<think>\n34\n</thought>\n<answer>(7 + (14 - 13))</answer>"
+  },
+  {
+    "numbers": [
+      7,
+      14,
+      13
+    ],
+    "target": 34,
+    "reward": 1.0,
+    "advantage": 0.54,
+    "response": "<think>\n(14 + (7 + 13))\n</think>\n<answer>(14 + (7 + 13))</answer>"
+  },
+  {
+    "numbers": [
+      7,
+      14,
+      13
+    ],
+    "target": 34,
+    "reward": 1.0,
+    "advantage": 0.54,
+    "response": "<think>\n7 + 14 + 13 = 34\n</think>\n<answer>(7 + 14 + 13)</answer>"
+  },
+  {
+    "numbers": [
+      7,
+      14,
+      13
+    ],
+    "target": 34,
+    "reward": 1.0,
+    "advantage": 0.54,
+    "response": "<think>\n7 + (14 + 13)\n</thought>\n<answer>(7 + (14 + 13))</answer>"
+  },
+  {
+    "numbers": [
+      7,
+      14,
+      13
+    ],
+    "target": 34,
+    "reward": 1.0,
+    "advantage": 0.54,
+    "response": "<think>\n34\n</think>\n<answer>(7 + (14 + 13))</answer>"
+  },
+  {
+    "numbers": [
+      6,
+      6,
+      17
+    ],
+    "target": 29,
+    "reward": 1.0,
+    "advantage": 0.0,
+    "response": "<think>\n6 + (6 + 17)\n</think>\n<answer>(6 + (6 + 17))</answer>"
+  },
+  {
+    "numbers": [
+      6,
+      6,
+      17
+    ],
+    "target": 29,
+    "reward": 1.0,
+    "advantage": 0.0,
+    "response": "<think>\n6 + 6 + 17\n</think>\n<answer>(6 + 6 + 17)</answer>"
+  },
+  {
+    "numbers": [
+      6,
+      6,
+      17
+    ],
+    "target": 29,
+    "reward": 1.0,
+    "advantage": 0.0,
+    "response": "<think>\n29 = 6 + 6 + 17\n</thought>\n<answer>6 + 6 + 17</answer>"
+  },
+  {
+    "numbers": [
+      6,
+      6,
+      17
+    ],
+    "target": 29,
+    "reward": 1.0,
+    "advantage": 0.0,
+    "response": "<think>\n29\n</think>\n<answer>(6 + (6 + 17))</answer>"
+  },
+  {
+    "numbers": [
+      6,
+      6,
+      17
+    ],
+    "target": 29,
+    "reward": 1.0,
+    "advantage": 0.0,
+    "response": "<think>\n6 + (6 + 17)\n</think>\n<answer>(6 + (6 + 17))</answer>"
+  },
+  {
+    "numbers": [
+      6,
+      6,
+      17
+    ],
+    "target": 29,
+    "reward": 1.0,
+    "advantage": 0.0,
+    "response": "<think>\n6 + (6 + 17)\n</think>\n<answer>(6 + (6 + 17))</answer>"
+  },
+  {
+    "numbers": [
+      6,
+      6,
+      17
+    ],
+    "target": 29,
+    "reward": 1.0,
+    "advantage": 0.0,
+    "response": "<think>\n29 = 6 + (6 + 17)\n</think>\n\n<answer>(6 + (6 + 17))</answer>"
+  },
+  {
+    "numbers": [
+      6,
+      6,
+      17
+    ],
+    "target": 29,
+    "reward": 1.0,
+    "advantage": 0.0,
+    "response": "<think>\n29 = (6 + 6 + 17)\n</thought>\n<answer>(6 + 6 + 17)</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      20,
+      13
+    ],
+    "target": 28,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n5 + (20 - 13)\n</think>\n<answer>(5 + (20 - 13))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      20,
+      13
+    ],
+    "target": 28,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n5 + (20 - 13)\n</think>\n<answer>(5 + (20 - 13))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      20,
+      13
+    ],
+    "target": 28,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n5 + (20 - 13)\n</think>\n<answer>(5 + (20 - 13))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      20,
+      13
+    ],
+    "target": 28,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n28 = (20 - 2 + 5) * 3\n</thought>\n<answer>(20 - 2 + 5) * 3</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      20,
+      13
+    ],
+    "target": 28,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n5 + (20 + 13) = 28\n</think>\n<answer>(5 + (20 + 13))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      20,
+      13
+    ],
+    "target": 28,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n5 + 13 + 20\n</thought>\n<answer>(5 + (13 + 20))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      20,
+      13
+    ],
+    "target": 28,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n28 = 5 + (20 - 13)\n</ think>\n<answer>(5 + (20 - 13))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      20,
+      13
+    ],
+    "target": 28,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n28 = (20 - (5 + 13))\n</think>\n<answer>(20 - (5 + 13))</answer>"
+  }
+]

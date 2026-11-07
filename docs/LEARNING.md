@@ -181,3 +181,86 @@ the gradients back before the optimizer step. On the Mac everything is fp32 and 
 - The loss value is not a progress metric in GRPO. Advantages in a group sum to zero, so the
   loss stays near 0 and jumps around (smoke: between -0.18 and +0.03). Watch mean_reward,
   accuracy, and kl instead.
+
+## G4: The real training run on a Kaggle T4
+
+**How the run was launched.** No notebook clicking: the Kaggle CLI does it from the laptop.
+- `kaggle/kernel-metadata.json` says: script kernel, GPU `NvidiaTeslaT4`, Internet ON, private.
+- `kaggle/run.py` runs on Kaggle: `nvidia-smi` (proof of the GPU), `git clone` of the public repo,
+  `uv sync --frozen` (exact versions from `uv.lock`), then `python -m grpo.train`.
+- Kaggle only keeps `/kaggle/working` after a run, so `results/` is linked there.
+- `kaggle kernels push -p kaggle` uploads and starts it, `kaggle kernels status` polls it,
+  `kaggle kernels output` downloads the results. No token is stored in the repo.
+
+**Timing test first.** 10 real-config steps on the T4: ~23 s/step on average (13-57 s).
+Speed depends on answer length: a batch waits for its longest answer. The full run measured
+**21.7 s/step**, 200 steps in 73 min of training (78 min total with setup).
+
+**Resume plan (not needed this time).** Checkpoints every 50 steps. If a session dies:
+download the output, upload `results/grpo_d2/` as a private Kaggle dataset, add it to
+`dataset_sources`, push again. `run.py` finds it under `/kaggle/input/` and `train.py`
+continues from the newest checkpoint (at most 49 steps are redone).
+
+**What happened** (training rollouts, 64 answers per step, averages over 20 steps):
+
+| steps | mean_reward | accuracy | kl | response length |
+|---|---|---|---|---|
+| 1-20 | 0.114 | 2.7% | 0.15 | 47 tokens |
+| 91-110 | 0.502 | 44.8% | 0.23 | 43 tokens |
+| 181-200 | 0.531 | 48.2% | 0.17 | 60 tokens |
+
+Plot: `results/grpo_d2/plot.png` (made by `python -m grpo.plot --run_name grpo_d2`).
+
+Simple words mein: shuru mein 64 jawabon mein se ~2 sahi the, end mein ~31. Model ne pehle format
+seekha (reward 0.1 wale jawab), phir sahi answer dena. Accuracy ~step 100 ke baad ~45-50% par ruk gayi.
+
+**Honest caveats.**
+- This is accuracy on the **training rollouts**, sampled at temperature 1.0. It is NOT the
+  held-out test accuracy. The baseline (5.0%, greedy, 200 held-out problems) is a different
+  measurement, so the two numbers must not be compared. The held-out evaluation of the trained
+  adapter is the next milestone; until then, no improvement is claimed.
+- One step = 64 answers from only 8 problems, so single steps are noisy (accuracy jumps between
+  ~15% and ~78% after step 100). Read the moving average, not single steps.
+- **KL spike at step 59:** kl = 48.5 for one step (median over the run: 0.20), loss 1.89. The next
+  step was back to 0.34 and reward did not crash. The k3 estimator is `exp(x) - x - 1`, so a
+  single token the reference model likes far more than the policy can blow it up. Gradient
+  clipping (max norm 1.0) limits how much one such step can move the weights. Step 59 has no
+  saved samples, so the exact cause was not checked. (The flat bump in the plot's average line
+  at steps 59-68 is just this one value inside the 10-step window.)
+- Samples at step 200 look normal: a short `<think>` and an `<answer>(...)</answer>`. The
+  verifier scored them. Some "reasoning" is thin (one answer's think is just "11"), because the
+  reward only checks the answer, not the reasoning.
+
+## G5: Reward hacking check
+
+**Reward hacking** = the model finds a way to get reward that the designer did not intend,
+without doing the real task. The reward is only a *proxy* for what we want, and RL optimizes the
+proxy, not our intention. Example: if we paid for "contains an answer tag", the model could learn
+to write a tag with garbage inside.
+
+**How it was checked.** `python -m grpo.hacking_check --run_name grpo_d2` reads the 10 saved sample
+files (640 training answers) and counts: correct / wrong / misused numbers / malformed, lazy
+"sum of all numbers" answers, thinks that are only an expression, token lengths, and how many
+different answer shapes there are. Full write-up with real examples: `docs/REWARD_HACKING.md`.
+
+**Result.** No hacking pattern grew during training. Reward rose through more correct answers
+(10/64 at step 20 to 44/64 at step 180, noisy). One loophole in the reward: an expression that
+invents or reuses a number still gets the 0.1 format reward (test 1 even expects that). The model
+did write such answers, but fewer over time (13/64 to 2-3/64), so it was not exploited.
+
+**Fix (applied):** misused numbers now get 0.0 instead of 0.1 (one line in `check()`).
+Simple words mein: pehle niyam todne wale answer ko bhi "format sahi hai" ke 0.1 mil jaate the,
+imaandaar galat answer jitne. Ab niyam todo toh 0. Imaandaar koshish (sahi numbers, galat jawab)
+ab cheating se behtar hai, jo honi chahiye.
+Effects: test 1 updated (still 3 tests). Baseline format rate re-scored from saved answers:
+86.5% -> 74.5% (difficulty 2); accuracy unchanged. Run `grpo_d2` used the old reward. Measuring the
+fix needs a new run with the same seed (`grpo_d2_legal`), the same check script, and held-out
+evaluation of both adapters. Not run yet, so no effect is claimed.
+
+**Things to say in an interview.**
+- GRPO only learns from differences inside a group. A group where every answer gets 0.1 has zero
+  advantages, so the 0.1 can only beat malformed answers. That limits how much it can be "farmed".
+- The `<think>` text is not rewarded, so it is not trustworthy: we saw a think claim "= 35" for an
+  expression that equals 13. Only the verifier's computed value counts.
+- Looking at the samples by hand is part of the measurement: an accuracy curve alone cannot show
+  *how* the reward was earned.

@@ -1,0 +1,706 @@
+[
+  {
+    "numbers": [
+      12,
+      10,
+      15
+    ],
+    "target": 37,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n    (12 - 10)\n</think>\n<answer>(12 - 10)</answer>"
+  },
+  {
+    "numbers": [
+      12,
+      10,
+      15
+    ],
+    "target": 37,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\nThe expression that equals 37 using the numbers 12, 10, and 15 is: <answer>(12 + (10 - 15))</answer>"
+  },
+  {
+    "numbers": [
+      12,
+      10,
+      15
+    ],
+    "target": 37,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\nTo make the expression equal 37, we can use the following expression: <answer>(12 - 10 + 15)\n</answer>"
+  },
+  {
+    "numbers": [
+      12,
+      10,
+      15
+    ],
+    "target": 37,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n37\n</think>\n<answer>(12 + 10) * 15</answer>"
+  },
+  {
+    "numbers": [
+      12,
+      10,
+      15
+    ],
+    "target": 37,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n(12 + 15) - 10\n</thought>\n<answer>17</answer>"
+  },
+  {
+    "numbers": [
+      12,
+      10,
+      15
+    ],
+    "target": 37,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n12 + 10 - 15\n</think>\n<answer>(12 + 10) * 3</answer>"
+  },
+  {
+    "numbers": [
+      12,
+      10,
+      15
+    ],
+    "target": 37,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n37\n</think>\n<answer>(12 + 10) * 15</answer>"
+  },
+  {
+    "numbers": [
+      12,
+      10,
+      15
+    ],
+    "target": 37,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n  Add 10 and 15, then multiply the result by 12.\n</thought>\n<answer>(10 + 15) * 12</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      5,
+      7
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n    Use (7 - 5) * 10 - 10\n</thought>\n<answer>(10 + 10) * 10 - 10</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      5,
+      7
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n  Use [10, 5, 7]. Let's create an expression that equals 2 with each number used at most once. One possible expression is:\n(5 - 7 + 10)\n<answer>(5 - 7 + 10)</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      5,
+      7
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n    2\n</think>\n<answer>(10 - 5 + 7)</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      5,
+      7
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n10 - 5 + 7\n</think>\n<answer>(10 - 5) + 7</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      5,
+      7
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n25 * 1</thought>\n<answer>(25 * 1)</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      5,
+      7
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\nYou can use the numbers 10, 5, 7, and parentheses to create the expression 2. One way is: (10 - 5 + 7)\n<answer>2</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      5,
+      7
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n  The target expression is 2.\n</think>\n\n<answer>(10 - 5 - 7)</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      5,
+      7
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n  Determine how to use the numbers 10, 5, and 7 to get the target value 2.\n  Possible operations: +, -, *, /\n- 10 + 5 = 15\n  - Conclusion = 2\n<answer>(10 + 5) * 7 = 2</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      3,
+      8
+    ],
+    "target": 15,
+    "reward": 0.10000000149011612,
+    "advantage": -0.725,
+    "response": "<think>\n  10 + 3 + (8 - 3) / 2 = 15\n</think>\n<answer>(10 + 3 + (8 - 3) / 2)</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      3,
+      8
+    ],
+    "target": 15,
+    "reward": 0.10000000149011612,
+    "advantage": -0.725,
+    "response": "<think>\nCreating an expression using numbers 10, 3, 8 and parentheses that equals 15 involves using as few operations as possible. One way to do this is:\n<choose>\n    <when ifs \"10 / 1\" opt-else \"15\">\n</choose>\n<answer>(10 / 1) * 1</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      3,
+      8
+    ],
+    "target": 15,
+    "reward": 0.10000000149011612,
+    "advantage": -0.725,
+    "response": "<think>\nCreate an expression using the numbers [10, 3, 8] that equals 15. Use +, -, *, / and parentheses.\n</think>\n<answer>(10 - 2) * 8</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      3,
+      8
+    ],
+    "target": 15,
+    "reward": 1.0,
+    "advantage": 1.208,
+    "response": "<think>\n10\n 3\n 8\n -10\n</think>\n<answer>(10 + (8 - 3))</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      3,
+      8
+    ],
+    "target": 15,
+    "reward": 0.10000000149011612,
+    "advantage": -0.725,
+    "response": "<think>\n  (10 - 3) * 8 = 15\n</think>\n<answer>(10 - 3) * 8</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      3,
+      8
+    ],
+    "target": 15,
+    "reward": 0.10000000149011612,
+    "advantage": -0.725,
+    "response": "<think>\nThe expression that equals 15 using the numbers [10, 3, 8] and the usual arithmetic operations (+, -, *, /, and parentheses) is:\n10 - 3 * 8\n</think>\n<answer>(10 - 3) * 8</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      3,
+      8
+    ],
+    "target": 15,
+    "reward": 1.0,
+    "advantage": 1.208,
+    "response": "<think>\n10 - 3 + 8\n</thought>\n<answer>(10 - 3) + 8</answer>"
+  },
+  {
+    "numbers": [
+      10,
+      3,
+      8
+    ],
+    "target": 15,
+    "reward": 1.0,
+    "advantage": 1.208,
+    "response": "<think>\nYou can use the following expressions to sum the numbers 10, 3, and 8:\n10 - 3 + 8 (using subtraction and addition)\n<answer>\n(10 - 3) + 8\n</answer>"
+  },
+  {
+    "numbers": [
+      8,
+      17,
+      11
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.935,
+    "response": "<think>\n   8 + 17 - 11\n</think>\n<answer>(8 + 17) - 11</answer>"
+  },
+  {
+    "numbers": [
+      8,
+      17,
+      11
+    ],
+    "target": 2,
+    "reward": 1.0,
+    "advantage": 0.935,
+    "response": "<think>\n    2 = (8 - 17 + 11)\n</think>\n<answer>(8 - 17 + 11)</answer>"
+  },
+  {
+    "numbers": [
+      8,
+      17,
+      11
+    ],
+    "target": 2,
+    "reward": 1.0,
+    "advantage": 0.935,
+    "response": "<think>\n2\n</thought>\n<answer>(8 - 17 + 11)</answer>"
+  },
+  {
+    "numbers": [
+      8,
+      17,
+      11
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.935,
+    "response": "<think>\n        17 * (11 - 8)\n</think>\n<answer>(17 * (11 - 8))</answer>"
+  },
+  {
+    "numbers": [
+      8,
+      17,
+      11
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.935,
+    "response": "<think>\nCreate an expression 2 using the numbers 8, 17, 11.\n</think>\n<answer>(8 + 17) * 11</answer>"
+  },
+  {
+    "numbers": [
+      8,
+      17,
+      11
+    ],
+    "target": 2,
+    "reward": 0.10000000149011612,
+    "advantage": -0.935,
+    "response": "<think>\n   11 + (17 - 8) * 2\n</think>\n<answer>(11 + 9 * 2)</answer>"
+  },
+  {
+    "numbers": [
+      8,
+      17,
+      11
+    ],
+    "target": 2,
+    "reward": 1.0,
+    "advantage": 0.935,
+    "response": "<think>\n8 - 17 + 11\n</think>\n<answer>(8 - 17 + 11)</answer>"
+  },
+  {
+    "numbers": [
+      8,
+      17,
+      11
+    ],
+    "target": 2,
+    "reward": 1.0,
+    "advantage": 0.935,
+    "response": "<think>\n  Use the following operations and symbols, at most once each:\n  8 - 17 + 11\n</think>\n<answer>(8 - 17 + 11)</answer>"
+  },
+  {
+    "numbers": [
+      2,
+      20,
+      2
+    ],
+    "target": 24,
+    "reward": 0.10000000149011612,
+    "advantage": -0.54,
+    "response": "<think>\n  Use the expression: <answer>(2 * 20 - 2)\n</answer> // Each number has been used at most once, and the expression equals 24"
+  },
+  {
+    "numbers": [
+      2,
+      20,
+      2
+    ],
+    "target": 24,
+    "reward": 0.10000000149011612,
+    "advantage": -0.54,
+    "response": "<think>\n   2 * 20 - 2\n</think>\n<answer>(2 * 20) - 2</answer>"
+  },
+  {
+    "numbers": [
+      2,
+      20,
+      2
+    ],
+    "target": 24,
+    "reward": 0.10000000149011612,
+    "advantage": -0.54,
+    "response": "<think>\n   (2 + 20) - 2\n</thought>\n<answer>(2 + 20) - 2</answer>"
+  },
+  {
+    "numbers": [
+      2,
+      20,
+      2
+    ],
+    "target": 24,
+    "reward": 0.10000000149011612,
+    "advantage": -0.54,
+    "response": "<think>\n   20 - 2 + 2\n</thought>\n<answer>(20 - 2 + 2)</answer>"
+  },
+  {
+    "numbers": [
+      2,
+      20,
+      2
+    ],
+    "target": 24,
+    "reward": 1.0,
+    "advantage": 1.62,
+    "response": "<think>\n2 + 20 + 2\n</think>\n<answer>(2 + 20 + 2)</answer>"
+  },
+  {
+    "numbers": [
+      2,
+      20,
+      2
+    ],
+    "target": 24,
+    "reward": 1.0,
+    "advantage": 1.62,
+    "response": "<think>\n2 + 20 + 2 = 24\n</think>\n<answer>(2 + 20) + 2 = 24</answer>"
+  },
+  {
+    "numbers": [
+      2,
+      20,
+      2
+    ],
+    "target": 24,
+    "reward": 0.10000000149011612,
+    "advantage": -0.54,
+    "response": "<think>\n2 + 20 - 2*2\n</think>\n<answer>(1 + 2) * 3</answer>"
+  },
+  {
+    "numbers": [
+      2,
+      20,
+      2
+    ],
+    "target": 24,
+    "reward": 0.10000000149011612,
+    "advantage": -0.54,
+    "response": "<think>\n  Use the operation (+, -, *, /) and parentheses to create the expression: 20 - (2 + 2)\n</think> \n<answer>(20 - (2 + 2))</answer>"
+  },
+  {
+    "numbers": [
+      15,
+      16,
+      19
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": -0.354,
+    "response": "<think>\nTo achieve an expression that equals 12 using the numbers 15, 16, and 19, you can use the following expression: (15 + 16) * 19\n<answer>(15 + 16) * 19</answer>"
+  },
+  {
+    "numbers": [
+      15,
+      16,
+      19
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": -0.354,
+    "response": "<think>\nTo create an expression that equals 12 using the numbers 15, 16, and 19, we use the arguments for max and multiply:\n</think>\n<answer>(15 + 19) * 16</answer>"
+  },
+  {
+    "numbers": [
+      15,
+      16,
+      19
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": -0.354,
+    "response": "<think>\n15 * (16 - 19)\n</think>\n<answer>(15 * (16 - 19))</answer>"
+  },
+  {
+    "numbers": [
+      15,
+      16,
+      19
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": -0.354,
+    "response": "<think>\n  15,16,19,15,16,19\n</think>\n\n<answer>(15 + 16) * 19</answer>"
+  },
+  {
+    "numbers": [
+      15,
+      16,
+      19
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": -0.354,
+    "response": "<think>\n15 - 16 + 19\n</think>\n<answer>(15 - 16) + 19</answer>"
+  },
+  {
+    "numbers": [
+      15,
+      16,
+      19
+    ],
+    "target": 12,
+    "reward": 1.0,
+    "advantage": 2.475,
+    "response": "<think>\n  15 + 16 - 19  \n</thought>  \n<answer>15 + (16 - 19)</answer>"
+  },
+  {
+    "numbers": [
+      15,
+      16,
+      19
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": -0.354,
+    "response": "<think>\nTo get an expression that equals 12 using the numbers 15, 16, and 19, we can use addition:\n\n</thought>\n<answer>(15 + 16) * 19</answer>"
+  },
+  {
+    "numbers": [
+      15,
+      16,
+      19
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": -0.354,
+    "response": "<think>\nCreate an expression by combining the numbers 15, 16, and 19 using:\n1. Arithmetic operations like +, -, *, and /\n1. No parentheses or any other operators\n2. Only use the numbers 15, 16, and 19 once\n3. The final expression equals 12\n<answer>(15 + 16) * 19</answer>"
+  },
+  {
+    "numbers": [
+      17,
+      18,
+      19
+    ],
+    "target": 54,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n    17 + 18 - 19\n</think>\n<answer>(17 + 18) - 19</answer>"
+  },
+  {
+    "numbers": [
+      17,
+      18,
+      19
+    ],
+    "target": 54,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n  54 = 17 + 18 + 19\n</think>\n<answer>(17 + 18) * 19</answer>"
+  },
+  {
+    "numbers": [
+      17,
+      18,
+      19
+    ],
+    "target": 54,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n  17 + (18 - 19)\n</thought>\n<answer>(17 + (18 - 19))</answer>"
+  },
+  {
+    "numbers": [
+      17,
+      18,
+      19
+    ],
+    "target": 54,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\nWe begin by considering how to use the numbers 17, 18, and 19 as operands and operations. The numbers must be used only once, leaving only one multiplication or division to form 54.\n\n<answer>(17 * 18) / 19</answer>"
+  },
+  {
+    "numbers": [
+      17,
+      18,
+      19
+    ],
+    "target": 54,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n   18  <answer>(17 + 1) * 3</answer>\n</think>"
+  },
+  {
+    "numbers": [
+      17,
+      18,
+      19
+    ],
+    "target": 54,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n 17 + 18 - 19 = 54\n</think>\n<answer>(17 + 18) - 19</answer>"
+  },
+  {
+    "numbers": [
+      17,
+      18,
+      19
+    ],
+    "target": 54,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\nCreating an expression of 54 using numbers 17, 18, and 19 and no more than once each, can start by finding combinations involving addition (+), subtraction (-), multiplication (*), and division (/). Since the numbers can be used at most once, we need to look for ways to use these operations to reach the target sum of 54.\n</thought>\n<answer>(17 + 18 - 32)</answer>"
+  },
+  {
+    "numbers": [
+      17,
+      18,
+      19
+    ],
+    "target": 54,
+    "reward": 0.10000000149011612,
+    "advantage": -0.007,
+    "response": "<think>\n    19 - (17 + 18)\n</think>\n<answer>(19 - (17 + 18))</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      11,
+      6
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": 0.354,
+    "response": "<think>\n  We need to use the numbers 5, 11, and 6. To get the result 12, we need to use the operations addition (+), subtraction (-), multiplication (*), and division (/).\n</think>\n<answer>(5 + 11 - 6)</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      11,
+      6
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": 0.354,
+    "response": "<think>\n  How can we use the numbers 5, 11, and 6 in an expression that equals 12 using at most one of the numbers and only addition, subtraction, multiplication, division (though parentheses are allowed), and using each number only once?\n</thought>\n<answer>(5 - 11 + 6)</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      11,
+      6
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": 0.354,
+    "response": "<think>\nUse the numbers 5, 11, and 6, concatenate them, then remove, add, and multiply each number with parentheses.\n</thought>\n<answer>(5 + 11 + 6)</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      11,
+      6
+    ],
+    "target": 12,
+    "reward": 0.0,
+    "advantage": -2.475,
+    "response": "<think>\nTo create an expression that equals 12 using [5, 11, 6] with each number used at most once and parentheses, we can use the following expression: <answer>(11 * (5 - 6)</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      11,
+      6
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": 0.354,
+    "response": "<think>\nExpression: (5 + 6) - 11\n</think>\n<answer>(5 + 6) - 11</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      11,
+      6
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": 0.354,
+    "response": "<think>\nUse the numbers 5, 11, and 6. Instead of using multiplication, you can use division. Divide 5 by 11 and then divide the result by 6.\n</think>\n<answer>(5 / 6) * 11</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      11,
+      6
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": 0.354,
+    "response": "<think>\n  6 + 6\n</think>\n<answer>(6 + 6)</answer>"
+  },
+  {
+    "numbers": [
+      5,
+      11,
+      6
+    ],
+    "target": 12,
+    "reward": 0.10000000149011612,
+    "advantage": 0.354,
+    "response": "<think>\nThe expression that equals 12 using the numbers 5, 11, and 6, and ensuring each number is used only once, is: 11 * (6 - 5)\n<answer>(11 * (6 - 5))</answer>"
+  }
+]

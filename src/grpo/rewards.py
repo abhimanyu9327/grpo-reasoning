@@ -84,8 +84,10 @@ def check(response, numbers, target):
     tree = parse_expression(expr)
     if tree is None:
         return False, False
+    # Invented or reused numbers break the rules, so no format credit either (0.0, not 0.1).
+    # Otherwise cheating would earn the same as an honest wrong answer (docs/REWARD_HACKING.md).
     if not uses_numbers_correctly(numbers_in(tree), numbers):
-        return True, False
+        return False, False
     value = evaluate(tree)
     return True, value is not None and value == target
 

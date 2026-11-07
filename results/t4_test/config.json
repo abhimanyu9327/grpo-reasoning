@@ -1,0 +1,17 @@
+{
+  "run_name": "t4_test",
+  "seed": 0,
+  "num_steps": 10,
+  "prompts_per_step": 8,
+  "group_size": 8,
+  "max_new_tokens": 512,
+  "temperature": 1.0,
+  "learning_rate": 5e-05,
+  "beta": 0.04,
+  "max_grad_norm": 1.0,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "micro_batch_size": 4,
+  "samples_every": 5,
+  "save_every": 10
+}

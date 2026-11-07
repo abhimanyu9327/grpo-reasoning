@@ -20,12 +20,12 @@ CASES = [
     # wrong but well formatted
     (wrap("12 + 7"), 0.1, "wrong value"),
     (wrap("12 / 7"), 0.1, "fraction, wrong value"),
-    (wrap("12 / (7 - 7)"), 0.1, "division by zero must not crash"),
-    # cheating attempts
-    (wrap("12 / 3 * 4"), 0.1, "4 is not one of the given numbers"),
-    (wrap("7 + 7 + 3 - 1"), 0.1, "reuses 7 and invents 1"),
-    (wrap("12 + 12 - 7 - 1"), 0.1, "reuses 12"),
-    (wrap("16"), 0.1, "just writes the target"),
+    (wrap("12 / (7 - 7)"), 0.0, "reuses 7 (and divides by zero)"),
+    # cheating attempts: breaking the number rules earns nothing, not even format credit
+    (wrap("12 / 3 * 4"), 0.0, "4 is not one of the given numbers"),
+    (wrap("7 + 7 + 3 - 1"), 0.0, "reuses 7 and invents 1"),
+    (wrap("12 + 12 - 7 - 1"), 0.0, "reuses 12"),
+    (wrap("16"), 0.0, "just writes the target"),
     (wrap("12 + 7 = 16"), 0.1, "claimed result is ignored, we compute 19 ourselves"),
     (wrap("__import__('os').system('ls')"), 0.0, "code injection is not parsed"),
     (wrap("2 ** 4"), 0.0, "power is not allowed"),
@@ -49,3 +49,5 @@ def test_reward_examples():
     for response, expected, why in CASES:
         got = compute_reward(response, NUMBERS, TARGET)
         assert got == expected, f"{why}: got {got}, expected {expected} for {response!r}"
+    # Division by zero with legal numbers must not crash (problems can repeat a number).
+    assert compute_reward(wrap("12 / (7 - 7)"), [7, 7, 12], 12) == 0.1

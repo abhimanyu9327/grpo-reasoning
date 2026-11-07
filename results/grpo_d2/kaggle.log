@@ -1,0 +1,358 @@
+[{"stream_name":"stdout","time":0.627724417,"data":"$ nvidia-smi\n"}
+,{"stream_name":"stdout","time":0.67451787,"data":"Wed Oct 28 16:26:46 2026       \n"}
+,{"stream_name":"stdout","time":0.674539423,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":0.674607918,"data":"| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\n"}
+,{"stream_name":"stdout","time":0.674614297,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":0.674618312,"data":"| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n"}
+,{"stream_name":"stdout","time":0.674622224,"data":"| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n"}
+,{"stream_name":"stdout","time":0.674626255,"data":"|                                         |                        |               MIG M. |\n"}
+,{"stream_name":"stdout","time":0.674651404,"data":"|=========================================+========================+======================|\n"}
+,{"stream_name":"stdout","time":0.744271205,"data":"|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |\n"}
+,{"stream_name":"stdout","time":0.744301151,"data":"| N/A   51C    P8             12W /   70W |       0MiB /  15360MiB |      0%      Default |\n"}
+,{"stream_name":"stdout","time":0.744326674,"data":"|                                         |                        |                  N/A |\n"}
+,{"stream_name":"stdout","time":0.744332116,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":0.744336898,"data":"|   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |\n"}
+,{"stream_name":"stdout","time":0.744341642,"data":"| N/A   48C    P8             12W /   70W |       0MiB /  15360MiB |      0%      Default |\n"}
+,{"stream_name":"stdout","time":0.74434633,"data":"|                                         |                        |                  N/A |\n"}
+,{"stream_name":"stdout","time":0.74435053,"data":"+-----------------------------------------+------------------------+----------------------+\n"}
+,{"stream_name":"stdout","time":0.745389665,"data":"\n"}
+,{"stream_name":"stdout","time":0.745409844,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":0.745427927,"data":"| Processes:                                                                              |\n"}
+,{"stream_name":"stdout","time":0.745434022,"data":"|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n"}
+,{"stream_name":"stdout","time":0.74543849,"data":"|        ID   ID                                                               Usage      |\n"}
+,{"stream_name":"stdout","time":0.745443167,"data":"|=========================================================================================|\n"}
+,{"stream_name":"stdout","time":0.747839186,"data":"|  No running processes found                                                             |\n"}
+,{"stream_name":"stdout","time":0.748047578,"data":"+-----------------------------------------------------------------------------------------+\n"}
+,{"stream_name":"stdout","time":1.087587758,"data":"$ git clone --depth 1 https://github.com/abhimanyu9327/grpo-reasoning.git /tmp/grpo-reasoning\n"}
+,{"stream_name":"stderr","time":1.130369213,"data":"Cloning into '/tmp/grpo-reasoning'...\n"}
+,{"stream_name":"stdout","time":2.838044144,"data":"$ pip install -q uv==0.12.9\n"}
+,{"stream_name":"stdout","time":8.36353984,"data":"$ uv sync --frozen --no-dev\n"}
+,{"stream_name":"stderr","time":8.473764017,"data":"Using CPython 3.13.15 interpreter at: /usr/bin/python3\n"}
+,{"stream_name":"stderr","time":8.473794957,"data":"Creating virtual environment at: /tmp/venv\n"}
+,{"stream_name":"stderr","time":8.506850986,"data":"   Building grpo-reasoning @ file:///tmp/grpo-reasoning\n"}
+,{"stream_name":"stderr","time":8.627355185,"data":"Downloading nvidia-cuda-runtime (2.1MiB)\n"}
+,{"stream_name":"stderr","time":8.62753224,"data":"Downloading fonttools (5.1MiB)\n"}
+,{"stream_name":"stderr","time":8.627768559,"data":"Downloading cuda-bindings (6.6MiB)\n"}
+,{"stream_name":"stderr","time":8.628014645,"data":"Downloading pillow (6.8MiB)\n"}
+,{"stream_name":"stderr","time":8.628613525,"data":"Downloading matplotlib (9.4MiB)\n"}
+,{"stream_name":"stderr","time":8.628993134,"data":"Downloading sympy (6.0MiB)\n"}
+,{"stream_name":"stderr","time":8.629635466,"data":"Downloading nvidia-nvjitlink (40.5MiB)\n"}
+,{"stream_name":"stderr","time":8.630325591,"data":"Downloading numpy (15.9MiB)\n"}
+,{"stream_name":"stderr","time":8.630726803,"data":"Downloading nvidia-curand (56.8MiB)\n"}
+,{"stream_name":"stderr","time":8.630956040000001,"data":"Downloading nvidia-cudnn-cu13 (527.5MiB)\n"}
+,{"stream_name":"stderr","time":8.631243506,"data":"Downloading nvidia-cuda-nvrtc (86.0MiB)\n"}
+,{"stream_name":"stderr","time":8.631559933,"data":"Downloading torch (528.9MiB)\n"}
+,{"stream_name":"stderr","time":8.631897206,"data":"Downloading nvidia-cufile (1.2MiB)\n"}
+,{"stream_name":"stderr","time":8.632153739,"data":"Downloading nvidia-cusolver (191.6MiB)\n"}
+,{"stream_name":"stderr","time":8.632732547,"data":"Downloading hf-xet (4.0MiB)\n"}
+,{"stream_name":"stderr","time":8.633006619,"data":"Downloading nvidia-cusparselt-cu13 (162.3MiB)\n"}
+,{"stream_name":"stderr","time":8.63328103,"data":"Downloading nvidia-cufft (204.2MiB)\n"}
+,{"stream_name":"stderr","time":8.633575263,"data":"Downloading triton (236.5MiB)\n"}
+,{"stream_name":"stderr","time":8.635292242,"data":"Downloading tokenizers (3.1MiB)\n"}
+,{"stream_name":"stderr","time":8.63568848,"data":"Downloading nvidia-cusparse (139.2MiB)\n"}
+,{"stream_name":"stderr","time":8.636031116,"data":"Downloading networkx (2.0MiB)\n"}
+,{"stream_name":"stderr","time":8.636658967,"data":"Downloading nvidia-cublas (403.5MiB)\n"}
+,{"stream_name":"stderr","time":8.637018255,"data":"Downloading nvidia-cuda-cupti (10.2MiB)\n"}
+,{"stream_name":"stderr","time":8.637319572,"data":"Downloading nvidia-nccl-cu13 (206.0MiB)\n"}
+,{"stream_name":"stderr","time":8.63786628,"data":"Downloading nvidia-nvshmem-cu13 (57.6MiB)\n"}
+,{"stream_name":"stderr","time":8.638183442,"data":"Downloading kiwisolver (1.4MiB)\n"}
+,{"stream_name":"stderr","time":8.638493487,"data":"Downloading transformers (11.4MiB)\n"}
+,{"stream_name":"stderr","time":9.882611474,"data":"      Built grpo-reasoning @ file:///tmp/grpo-reasoning\n"}
+,{"stream_name":"stderr","time":10.006198897,"data":" Downloaded nvidia-cufile\n"}
+,{"stream_name":"stderr","time":10.199107198,"data":" Downloaded kiwisolver\n"}
+,{"stream_name":"stderr","time":11.066374875,"data":" Downloaded networkx\n"}
+,{"stream_name":"stderr","time":11.143161324,"data":" Downloaded nvidia-cuda-runtime\n"}
+,{"stream_name":"stderr","time":12.391072809,"data":" Downloaded tokenizers\n"}
+,{"stream_name":"stderr","time":13.173922997,"data":" Downloaded hf-xet\n"}
+,{"stream_name":"stderr","time":14.815474442,"data":" Downloaded fonttools\n"}
+,{"stream_name":"stderr","time":16.346407443,"data":" Downloaded sympy\n"}
+,{"stream_name":"stderr","time":17.477363923,"data":" Downloaded cuda-bindings\n"}
+,{"stream_name":"stderr","time":17.57954085,"data":" Downloaded pillow\n"}
+,{"stream_name":"stderr","time":20.84291056,"data":" Downloaded matplotlib\n"}
+,{"stream_name":"stderr","time":22.479265213,"data":" Downloaded nvidia-cuda-cupti\n"}
+,{"stream_name":"stderr","time":23.773812898,"data":" Downloaded transformers\n"}
+,{"stream_name":"stderr","time":26.674801706,"data":" Downloaded numpy\n"}
+,{"stream_name":"stderr","time":40.153695351,"data":" Downloaded nvidia-nvjitlink\n"}
+,{"stream_name":"stderr","time":44.104590505,"data":" Downloaded nvidia-curand\n"}
+,{"stream_name":"stderr","time":44.487137912,"data":" Downloaded nvidia-nvshmem-cu13\n"}
+,{"stream_name":"stderr","time":52.358114195,"data":" Downloaded nvidia-cuda-nvrtc\n"}
+,{"stream_name":"stderr","time":67.036319652,"data":" Downloaded nvidia-cusparse\n"}
+,{"stream_name":"stderr","time":71.192213608,"data":" Downloaded nvidia-cusparselt-cu13\n"}
+,{"stream_name":"stderr","time":82.110608739,"data":" Downloaded nvidia-cusolver\n"}
+,{"stream_name":"stderr","time":85.055059563,"data":" Downloaded nvidia-cufft\n"}
+,{"stream_name":"stderr","time":85.531308855,"data":" Downloaded nvidia-nccl-cu13\n"}
+,{"stream_name":"stderr","time":88.796527185,"data":" Downloaded triton\n"}
+,{"stream_name":"stderr","time":109.682307676,"data":" Downloaded nvidia-cublas\n"}
+,{"stream_name":"stderr","time":121.678531866,"data":" Downloaded nvidia-cudnn-cu13\n"}
+,{"stream_name":"stderr","time":121.792711153,"data":" Downloaded torch\n"}
+,{"stream_name":"stderr","time":121.793191944,"data":"Prepared 58 packages in 1m 53s\n"}
+,{"stream_name":"stderr","time":122.10581977,"data":"Installed 58 packages in 312ms\n"}
+,{"stream_name":"stderr","time":122.105963194,"data":" + accelerate==1.15.0\n"}
+,{"stream_name":"stderr","time":122.106016809,"data":" + certifi==2026.10.23\n"}
+,{"stream_name":"stderr","time":122.106095467,"data":" + charset-normalizer==3.5.2\n"}
+,{"stream_name":"stderr","time":122.106176566,"data":" + contourpy==1.4.0\n"}
+,{"stream_name":"stderr","time":122.106297953,"data":" + cuda-bindings==13.4.4\n"}
+,{"stream_name":"stderr","time":122.106317922,"data":" + cuda-pathfinder==1.8.4\n"}
+,{"stream_name":"stderr","time":122.106403542,"data":" + cuda-toolkit==13.0.3.0\n"}
+,{"stream_name":"stderr","time":122.10652764,"data":" + cycler==0.12.1\n"}
+,{"stream_name":"stderr","time":122.106605979,"data":" + filelock==4.2.4\n"}
+,{"stream_name":"stderr","time":122.106621717,"data":" + fonttools==4.67.0\n"}
+,{"stream_name":"stderr","time":122.106701611,"data":" + fsspec==2026.9.0\n"}
+,{"stream_name":"stderr","time":122.106802238,"data":" + grpo-reasoning==0.1.0 (from file:///tmp/grpo-reasoning)\n"}
+,{"stream_name":"stderr","time":122.106878805,"data":" + hf-xet==1.7.0\n"}
+,{"stream_name":"stderr","time":122.106959658,"data":" + huggingface-hub==0.36.2\n"}
+,{"stream_name":"stderr","time":122.107013144,"data":" + idna==3.20\n"}
+,{"stream_name":"stderr","time":122.107130427,"data":" + jinja2==3.1.6\n"}
+,{"stream_name":"stderr","time":122.107157598,"data":" + kiwisolver==1.5.1\n"}
+,{"stream_name":"stderr","time":122.107218639,"data":" + markupsafe==3.0.4\n"}
+,{"stream_name":"stderr","time":122.107286228,"data":" + matplotlib==3.11.2\n"}
+,{"stream_name":"stderr","time":122.107384394,"data":" + mpmath==1.3.0\n"}
+,{"stream_name":"stderr","time":122.107405084,"data":" + networkx==3.7\n"}
+,{"stream_name":"stderr","time":122.107517636,"data":" + numpy==2.5.4\n"}
+,{"stream_name":"stderr","time":122.107600773,"data":" + nvidia-cublas==13.1.1.3\n"}
+,{"stream_name":"stderr","time":122.107673446,"data":" + nvidia-cuda-cupti==13.0.85\n"}
+,{"stream_name":"stderr","time":122.107705092,"data":" + nvidia-cuda-nvrtc==13.0.88\n"}
+,{"stream_name":"stderr","time":122.107793749,"data":" + nvidia-cuda-runtime==13.0.96\n"}
+,{"stream_name":"stderr","time":122.107851444,"data":" + nvidia-cudnn-cu13==9.24.0.43\n"}
+,{"stream_name":"stderr","time":122.107906355,"data":" + nvidia-cufft==12.0.0.61\n"}
+,{"stream_name":"stderr","time":122.108015023,"data":" + nvidia-cufile==1.15.1.6\n"}
+,{"stream_name":"stderr","time":122.108078538,"data":" + nvidia-curand==10.4.0.35\n"}
+,{"stream_name":"stderr","time":122.108143856,"data":" + nvidia-cusolver==12.0.4.66\n"}
+,{"stream_name":"stderr","time":122.108208498,"data":" + nvidia-cusparse==12.6.3.3\n"}
+,{"stream_name":"stderr","time":122.108277292,"data":" + nvidia-cusparselt-cu13==0.8.1\n"}
+,{"stream_name":"stderr","time":122.108337709,"data":" + nvidia-nccl-cu13==2.30.7\n"}
+,{"stream_name":"stderr","time":122.108413128,"data":" + nvidia-nvjitlink==13.4.92\n"}
+,{"stream_name":"stderr","time":122.108784466,"data":" + nvidia-nvshmem-cu13==3.4.5\n"}
+,{"stream_name":"stderr","time":122.108791791,"data":" + nvidia-nvtx==13.0.85\n"}
+,{"stream_name":"stderr","time":122.108796134,"data":" + packaging==26.3\n"}
+,{"stream_name":"stderr","time":122.108800385,"data":" + peft==0.21.2\n"}
+,{"stream_name":"stderr","time":122.108804357,"data":" + pillow==13.0.0\n"}
+,{"stream_name":"stderr","time":122.108808258,"data":" + psutil==7.2.2\n"}
+,{"stream_name":"stderr","time":122.108823753,"data":" + pyparsing==3.3.3\n"}
+,{"stream_name":"stderr","time":122.108837338,"data":" + python-dateutil==3.0.0\n"}
+,{"stream_name":"stderr","time":122.108862005,"data":" + pyyaml==6.0.3\n"}
+,{"stream_name":"stderr","time":122.108912553,"data":" + regex==2026.9.29\n"}
+,{"stream_name":"stderr","time":122.108983039,"data":" + requests==2.34.2\n"}
+,{"stream_name":"stderr","time":122.109077409,"data":" + safetensors==0.8.0\n"}
+,{"stream_name":"stderr","time":122.109160315,"data":" + setuptools==84.2.1\n"}
+,{"stream_name":"stderr","time":122.109206167,"data":" + six==1.17.0\n"}
+,{"stream_name":"stderr","time":122.109247455,"data":" + sympy==1.14.0\n"}
+,{"stream_name":"stderr","time":122.109319975,"data":" + tokenizers==0.22.2\n"}
+,{"stream_name":"stderr","time":122.109382285,"data":" + torch==2.14.1\n"}
+,{"stream_name":"stderr","time":122.109516601,"data":" + tqdm==4.70.1\n"}
+,{"stream_name":"stderr","time":122.109589019,"data":" + transformers==4.57.6\n"}
+,{"stream_name":"stderr","time":122.10962851,"data":" + triton==3.8.0\n"}
+,{"stream_name":"stderr","time":122.109697456,"data":" + typing-extensions==4.16.0\n"}
+,{"stream_name":"stderr","time":122.109735445,"data":" + tzdata==2026.5\n"}
+,{"stream_name":"stderr","time":122.10981383,"data":" + urllib3==2.8.0\n"}
+,{"stream_name":"stdout","time":122.120896774,"data":"$ uv run --frozen --no-dev python -m grpo.train --run_name grpo_d2\n"}
+,{"stream_name":"stderr","time":122.270107749,"data":"Error in sitecustomize; set PYTHONVERBOSE for traceback:\n"}
+,{"stream_name":"stderr","time":122.270147478,"data":"ModuleNotFoundError: No module named 'wrapt'\n"}
+,{"stream_name":"stdout","time":198.222372626,"data":"{'step': 1, 'mean_reward': 0.0266, 'accuracy': 0.0, 'mean_response_length': 127.8, 'kl': 0.0, 'loss': -0.073643}\n"}
+,{"stream_name":"stdout","time":231.653791112,"data":"{'step': 2, 'mean_reward': 0.0859, 'accuracy': 0.0156, 'mean_response_length': 87.7, 'kl': 0.02246, 'loss': -0.089252}\n"}
+,{"stream_name":"stdout","time":272.152706162,"data":"{'step': 3, 'mean_reward': 0.0859, 'accuracy': 0.0, 'mean_response_length': 71.6, 'kl': 0.059714, 'loss': -0.063858}\n"}
+,{"stream_name":"stdout","time":288.282758915,"data":"{'step': 4, 'mean_reward': 0.1172, 'accuracy': 0.0312, 'mean_response_length': 48.9, 'kl': 0.165427, 'loss': -0.030222}\n"}
+,{"stream_name":"stdout","time":298.399059524,"data":"{'step': 5, 'mean_reward': 0.0875, 'accuracy': 0.0, 'mean_response_length': 31.9, 'kl': 0.279885, 'loss': -0.055991}\n"}
+,{"stream_name":"stdout","time":306.735890562,"data":"{'step': 6, 'mean_reward': 0.1234, 'accuracy': 0.0312, 'mean_response_length': 32.0, 'kl': 0.219921, 'loss': -0.001475}\n"}
+,{"stream_name":"stdout","time":315.967314932,"data":"{'step': 7, 'mean_reward': 0.0922, 'accuracy': 0.0, 'mean_response_length': 32.3, 'kl': 0.229027, 'loss': -0.055127}\n"}
+,{"stream_name":"stdout","time":324.993612037,"data":"{'step': 8, 'mean_reward': 0.0953, 'accuracy': 0.0, 'mean_response_length': 33.5, 'kl': 0.168949, 'loss': -0.022262}\n"}
+,{"stream_name":"stdout","time":333.024490148,"data":"{'step': 9, 'mean_reward': 0.0984, 'accuracy': 0.0, 'mean_response_length': 31.0, 'kl': 0.220849, 'loss': 0.006677}\n"}
+,{"stream_name":"stdout","time":341.525236318,"data":"{'step': 10, 'mean_reward': 0.0938, 'accuracy': 0.0, 'mean_response_length': 32.9, 'kl': 0.189317, 'loss': -0.019896}\n"}
+,{"stream_name":"stdout","time":352.35680467,"data":"{'step': 11, 'mean_reward': 0.0922, 'accuracy': 0.0, 'mean_response_length': 34.8, 'kl': 0.161129, 'loss': -0.089145}\n"}
+,{"stream_name":"stdout","time":363.022632222,"data":"{'step': 12, 'mean_reward': 0.1391, 'accuracy': 0.0469, 'mean_response_length': 33.5, 'kl': 0.192605, 'loss': 0.007264}\n"}
+,{"stream_name":"stdout","time":375.440179341,"data":"{'step': 13, 'mean_reward': 0.1328, 'accuracy': 0.0469, 'mean_response_length': 36.5, 'kl': 0.154998, 'loss': -0.117744}\n"}
+,{"stream_name":"stdout","time":386.403914177,"data":"{'step': 14, 'mean_reward': 0.1391, 'accuracy': 0.0469, 'mean_response_length': 40.9, 'kl': 0.127814, 'loss': -0.013861}\n"}
+,{"stream_name":"stdout","time":409.202457879,"data":"{'step': 15, 'mean_reward': 0.1219, 'accuracy': 0.0312, 'mean_response_length': 44.1, 'kl': 0.129314, 'loss': -0.075883}\n"}
+,{"stream_name":"stdout","time":435.774577758,"data":"{'step': 16, 'mean_reward': 0.1391, 'accuracy': 0.0469, 'mean_response_length': 47.8, 'kl': 0.151995, 'loss': -0.043587}\n"}
+,{"stream_name":"stdout","time":450.902614164,"data":"{'step': 17, 'mean_reward': 0.15, 'accuracy': 0.0625, 'mean_response_length': 46.5, 'kl': 0.149689, 'loss': -0.088676}\n"}
+,{"stream_name":"stdout","time":465.495889702,"data":"{'step': 18, 'mean_reward': 0.0953, 'accuracy': 0.0, 'mean_response_length': 44.7, 'kl': 0.143898, 'loss': -0.043139}\n"}
+,{"stream_name":"stdout","time":481.897817347,"data":"{'step': 19, 'mean_reward': 0.125, 'accuracy': 0.0312, 'mean_response_length': 44.4, 'kl': 0.13184, 'loss': -0.036678}\n"}
+,{"stream_name":"stdout","time":494.143798061,"data":"{'step': 20, 'mean_reward': 0.2391, 'accuracy': 0.1562, 'mean_response_length': 41.3, 'kl': 0.161166, 'loss': -0.008595}\n"}
+,{"stream_name":"stdout","time":505.27186094,"data":"{'step': 21, 'mean_reward': 0.1266, 'accuracy': 0.0312, 'mean_response_length': 37.4, 'kl': 0.173539, 'loss': -0.014251}\n"}
+,{"stream_name":"stdout","time":515.553125906,"data":"{'step': 22, 'mean_reward': 0.2094, 'accuracy': 0.125, 'mean_response_length': 34.4, 'kl': 0.203569, 'loss': -0.043897}\n"}
+,{"stream_name":"stdout","time":527.17126912,"data":"{'step': 23, 'mean_reward': 0.1406, 'accuracy': 0.0469, 'mean_response_length': 32.3, 'kl': 0.204703, 'loss': -0.036316}\n"}
+,{"stream_name":"stdout","time":537.436189867,"data":"{'step': 24, 'mean_reward': 0.2547, 'accuracy': 0.1719, 'mean_response_length': 30.8, 'kl': 0.200175, 'loss': -0.021341}\n"}
+,{"stream_name":"stdout","time":544.99422858,"data":"{'step': 25, 'mean_reward': 0.3109, 'accuracy': 0.2344, 'mean_response_length': 27.6, 'kl': 0.231393, 'loss': -0.020804}\n"}
+,{"stream_name":"stdout","time":552.608083065,"data":"{'step': 26, 'mean_reward': 0.325, 'accuracy': 0.25, 'mean_response_length': 28.6, 'kl': 0.216017, 'loss': 0.018164}\n"}
+,{"stream_name":"stdout","time":559.914361905,"data":"{'step': 27, 'mean_reward': 0.3813, 'accuracy': 0.3125, 'mean_response_length': 27.9, 'kl': 0.289369, 'loss': -0.002926}\n"}
+,{"stream_name":"stdout","time":568.446006871,"data":"{'step': 28, 'mean_reward': 0.1688, 'accuracy': 0.0781, 'mean_response_length': 29.0, 'kl': 0.246394, 'loss': -0.031587}\n"}
+,{"stream_name":"stdout","time":575.620919252,"data":"{'step': 29, 'mean_reward': 0.1969, 'accuracy': 0.1094, 'mean_response_length': 27.6, 'kl': 0.23834, 'loss': 0.021938}\n"}
+,{"stream_name":"stdout","time":583.217112102,"data":"{'step': 30, 'mean_reward': 0.3078, 'accuracy': 0.2344, 'mean_response_length': 27.5, 'kl': 0.236545, 'loss': -0.009717}\n"}
+,{"stream_name":"stdout","time":590.807774577,"data":"{'step': 31, 'mean_reward': 0.4094, 'accuracy': 0.3438, 'mean_response_length': 29.0, 'kl': 0.287824, 'loss': -0.026645}\n"}
+,{"stream_name":"stdout","time":598.469000946,"data":"{'step': 32, 'mean_reward': 0.2828, 'accuracy': 0.2031, 'mean_response_length': 28.3, 'kl': 0.335794, 'loss': -0.005254}\n"}
+,{"stream_name":"stdout","time":606.02888422,"data":"{'step': 33, 'mean_reward': 0.4094, 'accuracy': 0.3438, 'mean_response_length': 29.5, 'kl': 0.407301, 'loss': -0.018153}\n"}
+,{"stream_name":"stdout","time":614.174383347,"data":"{'step': 34, 'mean_reward': 0.2828, 'accuracy': 0.2031, 'mean_response_length': 29.6, 'kl': 0.338931, 'loss': 0.002626}\n"}
+,{"stream_name":"stdout","time":621.932216348,"data":"{'step': 35, 'mean_reward': 0.3391, 'accuracy': 0.2656, 'mean_response_length': 28.6, 'kl': 0.316697, 'loss': 0.002588}\n"}
+,{"stream_name":"stdout","time":629.655193068,"data":"{'step': 36, 'mean_reward': 0.4344, 'accuracy': 0.375, 'mean_response_length': 30.3, 'kl': 0.286304, 'loss': -0.016926}\n"}
+,{"stream_name":"stdout","time":641.857409238,"data":"{'step': 37, 'mean_reward': 0.3516, 'accuracy': 0.2812, 'mean_response_length': 30.5, 'kl': 0.333955, 'loss': -0.022415}\n"}
+,{"stream_name":"stdout","time":650.084503303,"data":"{'step': 38, 'mean_reward': 0.4656, 'accuracy': 0.4062, 'mean_response_length': 31.0, 'kl': 0.321721, 'loss': -0.041104}\n"}
+,{"stream_name":"stdout","time":658.752299363,"data":"{'step': 39, 'mean_reward': 0.3078, 'accuracy': 0.2344, 'mean_response_length': 30.9, 'kl': 0.311226, 'loss': -0.012606}\n"}
+,{"stream_name":"stdout","time":668.017411682,"data":"{'step': 40, 'mean_reward': 0.4797, 'accuracy': 0.4219, 'mean_response_length': 30.3, 'kl': 0.30246, 'loss': 0.003674}\n"}
+,{"stream_name":"stdout","time":675.365165472,"data":"{'step': 41, 'mean_reward': 0.2125, 'accuracy': 0.125, 'mean_response_length': 30.0, 'kl': 0.283846, 'loss': 0.003543}\n"}
+,{"stream_name":"stdout","time":683.563758049,"data":"{'step': 42, 'mean_reward': 0.3813, 'accuracy': 0.3125, 'mean_response_length': 28.8, 'kl': 0.318361, 'loss': -0.013817}\n"}
+,{"stream_name":"stdout","time":692.488225314,"data":"{'step': 43, 'mean_reward': 0.1703, 'accuracy': 0.0781, 'mean_response_length': 29.8, 'kl': 0.369475, 'loss': -0.001367}\n"}
+,{"stream_name":"stdout","time":700.252238821,"data":"{'step': 44, 'mean_reward': 0.3531, 'accuracy': 0.2812, 'mean_response_length': 31.0, 'kl': 0.259783, 'loss': -0.009053}\n"}
+,{"stream_name":"stdout","time":707.867518061,"data":"{'step': 45, 'mean_reward': 0.5781, 'accuracy': 0.5312, 'mean_response_length': 28.5, 'kl': 0.307317, 'loss': -0.003669}\n"}
+,{"stream_name":"stdout","time":716.068509347,"data":"{'step': 46, 'mean_reward': 0.3953, 'accuracy': 0.3281, 'mean_response_length': 29.4, 'kl': 0.502314, 'loss': 0.012012}\n"}
+,{"stream_name":"stdout","time":724.043835086,"data":"{'step': 47, 'mean_reward': 0.2828, 'accuracy': 0.2031, 'mean_response_length': 29.1, 'kl': 0.270765, 'loss': -0.018755}\n"}
+,{"stream_name":"stdout","time":731.70005836,"data":"{'step': 48, 'mean_reward': 0.4234, 'accuracy': 0.3594, 'mean_response_length': 28.9, 'kl': 0.283475, 'loss': -0.007673}\n"}
+,{"stream_name":"stdout","time":739.16675871,"data":"{'step': 49, 'mean_reward': 0.3531, 'accuracy': 0.2812, 'mean_response_length': 29.3, 'kl': 0.385796, 'loss': 0.003369}\n"}
+,{"stream_name":"stdout","time":749.01837769,"data":"{'step': 50, 'mean_reward': 0.325, 'accuracy': 0.25, 'mean_response_length': 30.3, 'kl': 0.311091, 'loss': -0.03466}\n"}
+,{"stream_name":"stdout","time":771.102461347,"data":"{'step': 51, 'mean_reward': 0.3531, 'accuracy': 0.2812, 'mean_response_length': 31.6, 'kl': 0.319394, 'loss': 0.008595}\n"}
+,{"stream_name":"stdout","time":782.833792585,"data":"{'step': 52, 'mean_reward': 0.4781, 'accuracy': 0.4219, 'mean_response_length': 29.4, 'kl': 0.312311, 'loss': -0.027257}\n"}
+,{"stream_name":"stdout","time":797.896517734,"data":"{'step': 53, 'mean_reward': 0.3109, 'accuracy': 0.2344, 'mean_response_length': 35.2, 'kl': 0.276987, 'loss': 0.011458}\n"}
+,{"stream_name":"stdout","time":809.986105516,"data":"{'step': 54, 'mean_reward': 0.2812, 'accuracy': 0.2031, 'mean_response_length': 35.2, 'kl': 0.275755, 'loss': -0.046248}\n"}
+,{"stream_name":"stdout","time":823.144153784,"data":"{'step': 55, 'mean_reward': 0.3391, 'accuracy': 0.2656, 'mean_response_length': 36.5, 'kl': 0.291129, 'loss': -0.033416}\n"}
+,{"stream_name":"stdout","time":840.623113705,"data":"{'step': 56, 'mean_reward': 0.3797, 'accuracy': 0.3125, 'mean_response_length': 35.5, 'kl': 0.434765, 'loss': -0.0342}\n"}
+,{"stream_name":"stdout","time":850.518245068,"data":"{'step': 57, 'mean_reward': 0.2688, 'accuracy': 0.1875, 'mean_response_length': 32.7, 'kl': 0.312234, 'loss': -0.017121}\n"}
+,{"stream_name":"stdout","time":862.842502395,"data":"{'step': 58, 'mean_reward': 0.2828, 'accuracy': 0.2031, 'mean_response_length': 34.8, 'kl': 0.287456, 'loss': -0.024267}\n"}
+,{"stream_name":"stdout","time":880.447897578,"data":"{'step': 59, 'mean_reward': 0.5484, 'accuracy': 0.5, 'mean_response_length': 37.0, 'kl': 48.459278, 'loss': 1.891402}\n"}
+,{"stream_name":"stdout","time":892.318656767,"data":"{'step': 60, 'mean_reward': 0.3203, 'accuracy': 0.25, 'mean_response_length': 32.6, 'kl': 0.338279, 'loss': -0.058184}\n"}
+,{"stream_name":"stdout","time":911.761055225,"data":"{'step': 61, 'mean_reward': 0.3203, 'accuracy': 0.25, 'mean_response_length': 42.2, 'kl': 0.271525, 'loss': -0.034616}\n"}
+,{"stream_name":"stdout","time":926.551140145,"data":"{'step': 62, 'mean_reward': 0.2922, 'accuracy': 0.2188, 'mean_response_length': 35.9, 'kl': 0.343159, 'loss': 0.000593}\n"}
+,{"stream_name":"stdout","time":937.38046539,"data":"{'step': 63, 'mean_reward': 0.3391, 'accuracy': 0.2656, 'mean_response_length': 31.7, 'kl': 0.302542, 'loss': -0.014531}\n"}
+,{"stream_name":"stdout","time":948.26411215,"data":"{'step': 64, 'mean_reward': 0.225, 'accuracy': 0.1406, 'mean_response_length': 30.6, 'kl': 0.313704, 'loss': 0.007714}\n"}
+,{"stream_name":"stdout","time":985.121687397,"data":"{'step': 65, 'mean_reward': 0.2344, 'accuracy': 0.1562, 'mean_response_length': 40.0, 'kl': 0.267099, 'loss': -0.001744}\n"}
+,{"stream_name":"stdout","time":1013.592386184,"data":"{'step': 66, 'mean_reward': 0.2359, 'accuracy': 0.1562, 'mean_response_length': 48.6, 'kl': 0.237291, 'loss': -0.048311}\n"}
+,{"stream_name":"stdout","time":1027.798392847,"data":"{'step': 67, 'mean_reward': 0.3297, 'accuracy': 0.2656, 'mean_response_length': 42.2, 'kl': 0.42628, 'loss': -0.041319}\n"}
+,{"stream_name":"stdout","time":1039.37850044,"data":"{'step': 68, 'mean_reward': 0.2969, 'accuracy': 0.2188, 'mean_response_length': 44.5, 'kl': 0.195696, 'loss': -0.047093}\n"}
+,{"stream_name":"stdout","time":1070.173718035,"data":"{'step': 69, 'mean_reward': 0.3281, 'accuracy': 0.2656, 'mean_response_length': 43.2, 'kl': 0.305564, 'loss': -0.108097}\n"}
+,{"stream_name":"stdout","time":1114.882230823,"data":"{'step': 70, 'mean_reward': 0.3187, 'accuracy': 0.2656, 'mean_response_length': 49.4, 'kl': 0.237714, 'loss': -0.067132}\n"}
+,{"stream_name":"stdout","time":1133.892393406,"data":"{'step': 71, 'mean_reward': 0.2828, 'accuracy': 0.2188, 'mean_response_length': 48.0, 'kl': 0.242506, 'loss': -0.005594}\n"}
+,{"stream_name":"stdout","time":1151.057846027,"data":"{'step': 72, 'mean_reward': 0.3625, 'accuracy': 0.2969, 'mean_response_length': 50.9, 'kl': 0.267647, 'loss': -0.066926}\n"}
+,{"stream_name":"stdout","time":1203.387155366,"data":"{'step': 73, 'mean_reward': 0.2656, 'accuracy': 0.1875, 'mean_response_length': 61.0, 'kl': 0.18349, 'loss': -0.047258}\n"}
+,{"stream_name":"stdout","time":1222.101247103,"data":"{'step': 74, 'mean_reward': 0.4062, 'accuracy': 0.3438, 'mean_response_length': 53.3, 'kl': 0.19231, 'loss': -0.069344}\n"}
+,{"stream_name":"stdout","time":1246.40001536,"data":"{'step': 75, 'mean_reward': 0.3359, 'accuracy': 0.2656, 'mean_response_length': 63.3, 'kl': 0.164488, 'loss': -0.031593}\n"}
+,{"stream_name":"stdout","time":1265.324609998,"data":"{'step': 76, 'mean_reward': 0.3609, 'accuracy': 0.2969, 'mean_response_length': 54.4, 'kl': 0.19385, 'loss': -0.058542}\n"}
+,{"stream_name":"stdout","time":1299.157438986,"data":"{'step': 77, 'mean_reward': 0.3891, 'accuracy': 0.3281, 'mean_response_length': 61.6, 'kl': 0.137779, 'loss': -0.021235}\n"}
+,{"stream_name":"stdout","time":1315.454491172,"data":"{'step': 78, 'mean_reward': 0.3359, 'accuracy': 0.2656, 'mean_response_length': 57.3, 'kl': 0.161391, 'loss': -0.054795}\n"}
+,{"stream_name":"stdout","time":1367.921442473,"data":"{'step': 79, 'mean_reward': 0.4344, 'accuracy': 0.375, 'mean_response_length': 64.2, 'kl': 0.156349, 'loss': -0.071525}\n"}
+,{"stream_name":"stdout","time":1420.28878358,"data":"{'step': 80, 'mean_reward': 0.2781, 'accuracy': 0.2031, 'mean_response_length': 75.2, 'kl': 0.148739, 'loss': -0.056944}\n"}
+,{"stream_name":"stdout","time":1472.831378395,"data":"{'step': 81, 'mean_reward': 0.375, 'accuracy': 0.3125, 'mean_response_length': 61.7, 'kl': 0.153612, 'loss': -0.054013}\n"}
+,{"stream_name":"stdout","time":1525.524722357,"data":"{'step': 82, 'mean_reward': 0.5594, 'accuracy': 0.5156, 'mean_response_length': 63.8, 'kl': 0.179156, 'loss': -0.00581}\n"}
+,{"stream_name":"stdout","time":1537.278150299,"data":"{'step': 83, 'mean_reward': 0.5609, 'accuracy': 0.5156, 'mean_response_length': 47.2, 'kl': 0.299987, 'loss': 0.005999}\n"}
+,{"stream_name":"stdout","time":1589.733801249,"data":"{'step': 84, 'mean_reward': 0.3625, 'accuracy': 0.2969, 'mean_response_length': 61.8, 'kl': 0.164258, 'loss': -0.052321}\n"}
+,{"stream_name":"stdout","time":1605.885627744,"data":"{'step': 85, 'mean_reward': 0.3109, 'accuracy': 0.2344, 'mean_response_length': 50.3, 'kl': 0.192518, 'loss': -0.001631}\n"}
+,{"stream_name":"stdout","time":1620.876956245,"data":"{'step': 86, 'mean_reward': 0.4203, 'accuracy': 0.3594, 'mean_response_length': 46.2, 'kl': 0.190746, 'loss': -0.03612}\n"}
+,{"stream_name":"stdout","time":1667.736757662,"data":"{'step': 87, 'mean_reward': 0.6328, 'accuracy': 0.5938, 'mean_response_length': 50.7, 'kl': 0.193896, 'loss': -0.043989}\n"}
+,{"stream_name":"stdout","time":1678.783958758,"data":"{'step': 88, 'mean_reward': 0.5906, 'accuracy': 0.5469, 'mean_response_length': 41.2, 'kl': 0.292285, 'loss': -0.0113}\n"}
+,{"stream_name":"stdout","time":1698.176934065,"data":"{'step': 89, 'mean_reward': 0.5906, 'accuracy': 0.5469, 'mean_response_length': 43.2, 'kl': 0.245633, 'loss': -0.08219}\n"}
+,{"stream_name":"stdout","time":1710.205294085,"data":"{'step': 90, 'mean_reward': 0.5484, 'accuracy': 0.5, 'mean_response_length': 40.3, 'kl': 0.210625, 'loss': -0.016415}\n"}
+,{"stream_name":"stdout","time":1762.208324178,"data":"{'step': 91, 'mean_reward': 0.5906, 'accuracy': 0.5469, 'mean_response_length': 48.2, 'kl': 0.267601, 'loss': -0.055315}\n"}
+,{"stream_name":"stdout","time":1772.544263711,"data":"{'step': 92, 'mean_reward': 0.4906, 'accuracy': 0.4375, 'mean_response_length': 37.1, 'kl': 0.236551, 'loss': -0.059447}\n"}
+,{"stream_name":"stdout","time":1783.179292662,"data":"{'step': 93, 'mean_reward': 0.45, 'accuracy': 0.3906, 'mean_response_length': 36.8, 'kl': 0.258877, 'loss': -0.020311}\n"}
+,{"stream_name":"stdout","time":1834.438406902,"data":"{'step': 94, 'mean_reward': 0.7031, 'accuracy': 0.6719, 'mean_response_length': 43.0, 'kl': 0.218368, 'loss': -0.012548}\n"}
+,{"stream_name":"stdout","time":1845.339916671,"data":"{'step': 95, 'mean_reward': 0.6484, 'accuracy': 0.6094, 'mean_response_length': 34.2, 'kl': 0.231889, 'loss': -0.05118}\n"}
+,{"stream_name":"stdout","time":1855.030132258,"data":"{'step': 96, 'mean_reward': 0.5359, 'accuracy': 0.4844, 'mean_response_length': 35.0, 'kl': 0.261462, 'loss': 0.017309}\n"}
+,{"stream_name":"stdout","time":1868.482617278,"data":"{'step': 97, 'mean_reward': 0.3937, 'accuracy': 0.3281, 'mean_response_length': 36.4, 'kl': 0.206057, 'loss': 0.025554}\n"}
+,{"stream_name":"stdout","time":1880.275039236,"data":"{'step': 98, 'mean_reward': 0.3813, 'accuracy': 0.3125, 'mean_response_length': 35.8, 'kl': 0.232187, 'loss': -0.006562}\n"}
+,{"stream_name":"stdout","time":1898.76174457,"data":"{'step': 99, 'mean_reward': 0.45, 'accuracy': 0.3906, 'mean_response_length': 37.8, 'kl': 0.232837, 'loss': -0.019382}\n"}
+,{"stream_name":"stdout","time":1914.535945936,"data":"{'step': 100, 'mean_reward': 0.3109, 'accuracy': 0.2344, 'mean_response_length': 42.5, 'kl': 0.196257, 'loss': -0.0274}\n"}
+,{"stream_name":"stdout","time":1931.72372932,"data":"{'step': 101, 'mean_reward': 0.7156, 'accuracy': 0.6875, 'mean_response_length': 41.2, 'kl': 0.221254, 'loss': -0.056486}\n"}
+,{"stream_name":"stdout","time":1944.681197254,"data":"{'step': 102, 'mean_reward': 0.4219, 'accuracy': 0.3594, 'mean_response_length': 41.8, 'kl': 0.247529, 'loss': -0.043163}\n"}
+,{"stream_name":"stdout","time":1965.482444484,"data":"{'step': 103, 'mean_reward': 0.4781, 'accuracy': 0.4219, 'mean_response_length': 46.2, 'kl': 0.241015, 'loss': -0.077018}\n"}
+,{"stream_name":"stdout","time":2017.156639052,"data":"{'step': 104, 'mean_reward': 0.5188, 'accuracy': 0.4688, 'mean_response_length': 56.0, 'kl': 0.228548, 'loss': -0.003567}\n"}
+,{"stream_name":"stdout","time":2047.075986621,"data":"{'step': 105, 'mean_reward': 0.6609, 'accuracy': 0.625, 'mean_response_length': 48.8, 'kl': 0.245698, 'loss': 0.014427}\n"}
+,{"stream_name":"stdout","time":2060.398483611,"data":"{'step': 106, 'mean_reward': 0.3531, 'accuracy': 0.2812, 'mean_response_length': 41.7, 'kl': 0.257013, 'loss': 0.047868}\n"}
+,{"stream_name":"stdout","time":2073.994576168,"data":"{'step': 107, 'mean_reward': 0.6203, 'accuracy': 0.5781, 'mean_response_length': 48.0, 'kl': 0.238995, 'loss': -0.034902}\n"}
+,{"stream_name":"stdout","time":2085.781218333,"data":"{'step': 108, 'mean_reward': 0.3531, 'accuracy': 0.2812, 'mean_response_length': 46.7, 'kl': 0.206307, 'loss': -0.003251}\n"}
+,{"stream_name":"stdout","time":2110.857300247,"data":"{'step': 109, 'mean_reward': 0.3922, 'accuracy': 0.3281, 'mean_response_length': 55.8, 'kl': 0.205409, 'loss': -0.030821}\n"}
+,{"stream_name":"stdout","time":2129.294375081,"data":"{'step': 110, 'mean_reward': 0.5625, 'accuracy': 0.5156, 'mean_response_length': 49.3, 'kl': 0.253123, 'loss': 0.026993}\n"}
+,{"stream_name":"stdout","time":2147.435097542,"data":"{'step': 111, 'mean_reward': 0.45, 'accuracy': 0.3906, 'mean_response_length': 54.0, 'kl': 0.204263, 'loss': -0.008251}\n"}
+,{"stream_name":"stdout","time":2168.906797866,"data":"{'step': 112, 'mean_reward': 0.3781, 'accuracy': 0.3125, 'mean_response_length': 49.6, 'kl': 0.256264, 'loss': 0.052394}\n"}
+,{"stream_name":"stdout","time":2203.713803543,"data":"{'step': 113, 'mean_reward': 0.55, 'accuracy': 0.5, 'mean_response_length': 70.5, 'kl': 0.191751, 'loss': -0.058149}\n"}
+,{"stream_name":"stdout","time":2224.708489023,"data":"{'step': 114, 'mean_reward': 0.5469, 'accuracy': 0.5, 'mean_response_length': 62.8, 'kl': 0.202662, 'loss': 0.028649}\n"}
+,{"stream_name":"stdout","time":2242.38601026,"data":"{'step': 115, 'mean_reward': 0.5641, 'accuracy': 0.5156, 'mean_response_length': 59.6, 'kl': 0.20733, 'loss': 0.014707}\n"}
+,{"stream_name":"stdout","time":2262.519516678,"data":"{'step': 116, 'mean_reward': 0.6891, 'accuracy': 0.6562, 'mean_response_length': 59.8, 'kl': 0.227998, 'loss': -0.018216}\n"}
+,{"stream_name":"stdout","time":2284.700795769,"data":"{'step': 117, 'mean_reward': 0.4344, 'accuracy': 0.375, 'mean_response_length': 56.6, 'kl': 0.225305, 'loss': 0.01524}\n"}
+,{"stream_name":"stdout","time":2321.211984753,"data":"{'step': 118, 'mean_reward': 0.2125, 'accuracy': 0.125, 'mean_response_length': 69.1, 'kl': 0.250406, 'loss': -0.024354}\n"}
+,{"stream_name":"stdout","time":2340.178292916,"data":"{'step': 119, 'mean_reward': 0.6875, 'accuracy': 0.6562, 'mean_response_length': 64.5, 'kl': 0.21318, 'loss': -0.04947}\n"}
+,{"stream_name":"stdout","time":2364.169207075,"data":"{'step': 120, 'mean_reward': 0.3031, 'accuracy': 0.2344, 'mean_response_length': 70.4, 'kl': 0.189684, 'loss': -0.02649}\n"}
+,{"stream_name":"stdout","time":2385.943636345,"data":"{'step': 121, 'mean_reward': 0.4078, 'accuracy': 0.3438, 'mean_response_length': 66.0, 'kl': 0.174871, 'loss': -0.033699}\n"}
+,{"stream_name":"stdout","time":2408.930190002,"data":"{'step': 122, 'mean_reward': 0.3813, 'accuracy': 0.3125, 'mean_response_length': 62.1, 'kl': 0.262951, 'loss': -0.025267}\n"}
+,{"stream_name":"stdout","time":2430.50278398,"data":"{'step': 123, 'mean_reward': 0.5203, 'accuracy': 0.4688, 'mean_response_length': 65.5, 'kl': 0.18185, 'loss': -0.053215}\n"}
+,{"stream_name":"stdout","time":2463.32192522,"data":"{'step': 124, 'mean_reward': 0.4656, 'accuracy': 0.4062, 'mean_response_length': 60.5, 'kl': 0.167395, 'loss': -0.029582}\n"}
+,{"stream_name":"stdout","time":2476.826208534,"data":"{'step': 125, 'mean_reward': 0.4938, 'accuracy': 0.4375, 'mean_response_length': 57.6, 'kl': 0.165299, 'loss': -0.038047}\n"}
+,{"stream_name":"stdout","time":2506.842542135,"data":"{'step': 126, 'mean_reward': 0.4328, 'accuracy': 0.375, 'mean_response_length': 68.1, 'kl': 0.129095, 'loss': 0.018941}\n"}
+,{"stream_name":"stdout","time":2525.220885288,"data":"{'step': 127, 'mean_reward': 0.4797, 'accuracy': 0.4219, 'mean_response_length': 59.0, 'kl': 0.154147, 'loss': -0.058986}\n"}
+,{"stream_name":"stdout","time":2541.689854416,"data":"{'step': 128, 'mean_reward': 0.4641, 'accuracy': 0.4062, 'mean_response_length': 60.2, 'kl': 0.150776, 'loss': -0.025606}\n"}
+,{"stream_name":"stdout","time":2565.670814539,"data":"{'step': 129, 'mean_reward': 0.6891, 'accuracy': 0.6562, 'mean_response_length': 64.7, 'kl': 0.178077, 'loss': -0.00957}\n"}
+,{"stream_name":"stdout","time":2595.865058434,"data":"{'step': 130, 'mean_reward': 0.5734, 'accuracy': 0.5312, 'mean_response_length': 59.8, 'kl': 0.198113, 'loss': -0.033379}\n"}
+,{"stream_name":"stdout","time":2640.775383397,"data":"{'step': 131, 'mean_reward': 0.5609, 'accuracy': 0.5156, 'mean_response_length': 72.8, 'kl': 0.17449, 'loss': -0.110408}\n"}
+,{"stream_name":"stdout","time":2669.15263449,"data":"{'step': 132, 'mean_reward': 0.5609, 'accuracy': 0.5156, 'mean_response_length': 74.4, 'kl': 0.235901, 'loss': -0.009364}\n"}
+,{"stream_name":"stdout","time":2721.081016895,"data":"{'step': 133, 'mean_reward': 0.575, 'accuracy': 0.5312, 'mean_response_length': 68.7, 'kl': 0.164119, 'loss': 0.028402}\n"}
+,{"stream_name":"stdout","time":2745.345646007,"data":"{'step': 134, 'mean_reward': 0.3625, 'accuracy': 0.2969, 'mean_response_length': 64.8, 'kl': 0.167443, 'loss': -0.018436}\n"}
+,{"stream_name":"stdout","time":2768.269297332,"data":"{'step': 135, 'mean_reward': 0.5781, 'accuracy': 0.5312, 'mean_response_length': 58.7, 'kl': 0.185025, 'loss': 0.033691}\n"}
+,{"stream_name":"stdout","time":2785.624181497,"data":"{'step': 136, 'mean_reward': 0.6766, 'accuracy': 0.6406, 'mean_response_length': 57.5, 'kl': 0.207069, 'loss': -0.033459}\n"}
+,{"stream_name":"stdout","time":2804.223374765,"data":"{'step': 137, 'mean_reward': 0.5078, 'accuracy': 0.4531, 'mean_response_length': 58.3, 'kl': 0.165779, 'loss': -0.019643}\n"}
+,{"stream_name":"stdout","time":2820.244890042,"data":"{'step': 138, 'mean_reward': 0.6047, 'accuracy': 0.5625, 'mean_response_length': 64.5, 'kl': 0.174499, 'loss': -0.0315}\n"}
+,{"stream_name":"stdout","time":2844.574570057,"data":"{'step': 139, 'mean_reward': 0.5594, 'accuracy': 0.5156, 'mean_response_length': 70.2, 'kl': 0.186634, 'loss': 0.01175}\n"}
+,{"stream_name":"stdout","time":2873.462843078,"data":"{'step': 140, 'mean_reward': 0.4094, 'accuracy': 0.3438, 'mean_response_length': 68.8, 'kl': 0.174669, 'loss': 0.007029}\n"}
+,{"stream_name":"stdout","time":2902.234323686,"data":"{'step': 141, 'mean_reward': 0.5734, 'accuracy': 0.5312, 'mean_response_length': 62.5, 'kl': 0.258294, 'loss': -0.021195}\n"}
+,{"stream_name":"stdout","time":2920.637589979,"data":"{'step': 142, 'mean_reward': 0.5766, 'accuracy': 0.5312, 'mean_response_length': 64.7, 'kl': 0.1722, 'loss': 0.013788}\n"}
+,{"stream_name":"stdout","time":2954.95665411,"data":"{'step': 143, 'mean_reward': 0.6625, 'accuracy': 0.625, 'mean_response_length': 67.6, 'kl': 0.240344, 'loss': 0.002314}\n"}
+,{"stream_name":"stdout","time":2984.422028779,"data":"{'step': 144, 'mean_reward': 0.6547, 'accuracy': 0.625, 'mean_response_length': 83.8, 'kl': 0.399315, 'loss': -0.029931}\n"}
+,{"stream_name":"stdout","time":3002.254266917,"data":"{'step': 145, 'mean_reward': 0.6875, 'accuracy': 0.6562, 'mean_response_length': 68.4, 'kl': 0.248497, 'loss': -0.022584}\n"}
+,{"stream_name":"stdout","time":3038.610788334,"data":"{'step': 146, 'mean_reward': 0.4219, 'accuracy': 0.3594, 'mean_response_length': 73.7, 'kl': 0.196032, 'loss': -0.001207}\n"}
+,{"stream_name":"stdout","time":3078.780812998,"data":"{'step': 147, 'mean_reward': 0.5703, 'accuracy': 0.5312, 'mean_response_length': 91.0, 'kl': 0.203483, 'loss': -0.080624}\n"}
+,{"stream_name":"stdout","time":3102.535168185,"data":"{'step': 148, 'mean_reward': 0.5875, 'accuracy': 0.5469, 'mean_response_length': 77.0, 'kl': 0.239671, 'loss': -0.018587}\n"}
+,{"stream_name":"stdout","time":3122.663882006,"data":"{'step': 149, 'mean_reward': 0.4641, 'accuracy': 0.4062, 'mean_response_length': 79.2, 'kl': 0.171903, 'loss': 0.023807}\n"}
+,{"stream_name":"stdout","time":3168.189794775,"data":"{'step': 150, 'mean_reward': 0.6187, 'accuracy': 0.5781, 'mean_response_length': 82.3, 'kl': 0.178442, 'loss': 0.00427}\n"}
+,{"stream_name":"stdout","time":3196.858483405,"data":"{'step': 151, 'mean_reward': 0.3047, 'accuracy': 0.2344, 'mean_response_length': 84.2, 'kl': 0.188252, 'loss': -0.017283}\n"}
+,{"stream_name":"stdout","time":3225.659529035,"data":"{'step': 152, 'mean_reward': 0.4734, 'accuracy': 0.4219, 'mean_response_length': 74.8, 'kl': 0.197421, 'loss': 0.010765}\n"}
+,{"stream_name":"stdout","time":3275.038770841,"data":"{'step': 153, 'mean_reward': 0.6203, 'accuracy': 0.5781, 'mean_response_length': 80.9, 'kl': 0.161431, 'loss': 0.014483}\n"}
+,{"stream_name":"stdout","time":3328.98045392,"data":"{'step': 154, 'mean_reward': 0.5172, 'accuracy': 0.4688, 'mean_response_length': 89.6, 'kl': 0.160338, 'loss': 0.026235}\n"}
+,{"stream_name":"stdout","time":3358.446056804,"data":"{'step': 155, 'mean_reward': 0.3797, 'accuracy': 0.3125, 'mean_response_length': 77.2, 'kl': 0.155979, 'loss': 0.007436}\n"}
+,{"stream_name":"stdout","time":3387.680675441,"data":"{'step': 156, 'mean_reward': 0.5109, 'accuracy': 0.4688, 'mean_response_length': 82.3, 'kl': 0.172306, 'loss': -0.046648}\n"}
+,{"stream_name":"stdout","time":3413.056553814,"data":"{'step': 157, 'mean_reward': 0.5062, 'accuracy': 0.4531, 'mean_response_length': 79.7, 'kl': 0.146137, 'loss': -0.056892}\n"}
+,{"stream_name":"stdout","time":3456.849343509,"data":"{'step': 158, 'mean_reward': 0.5281, 'accuracy': 0.4844, 'mean_response_length': 78.6, 'kl': 0.165829, 'loss': 0.076043}\n"}
+,{"stream_name":"stdout","time":3477.681072693,"data":"{'step': 159, 'mean_reward': 0.375, 'accuracy': 0.3125, 'mean_response_length': 64.3, 'kl': 0.182416, 'loss': -0.008299}\n"}
+,{"stream_name":"stdout","time":3519.284381729,"data":"{'step': 160, 'mean_reward': 0.5453, 'accuracy': 0.5, 'mean_response_length': 73.6, 'kl': 0.191125, 'loss': -0.007685}\n"}
+,{"stream_name":"stdout","time":3548.169127474,"data":"{'step': 161, 'mean_reward': 0.5031, 'accuracy': 0.4531, 'mean_response_length': 80.9, 'kl': 0.138369, 'loss': -0.021242}\n"}
+,{"stream_name":"stdout","time":3573.268967879,"data":"{'step': 162, 'mean_reward': 0.6594, 'accuracy': 0.625, 'mean_response_length': 79.5, 'kl': 0.213251, 'loss': -0.023079}\n"}
+,{"stream_name":"stdout","time":3621.249071626,"data":"{'step': 163, 'mean_reward': 0.4328, 'accuracy': 0.375, 'mean_response_length': 94.7, 'kl': 0.134007, 'loss': -0.011516}\n"}
+,{"stream_name":"stdout","time":3654.893918673,"data":"{'step': 164, 'mean_reward': 0.4719, 'accuracy': 0.4219, 'mean_response_length': 76.0, 'kl': 0.155534, 'loss': -0.028787}\n"}
+,{"stream_name":"stdout","time":3696.997603469,"data":"{'step': 165, 'mean_reward': 0.6141, 'accuracy': 0.5781, 'mean_response_length': 98.8, 'kl': 0.154109, 'loss': -0.126936}\n"}
+,{"stream_name":"stdout","time":3745.611487658,"data":"{'step': 166, 'mean_reward': 0.4156, 'accuracy': 0.3594, 'mean_response_length': 82.5, 'kl': 0.163711, 'loss': -0.106238}\n"}
+,{"stream_name":"stdout","time":3794.263329639,"data":"{'step': 167, 'mean_reward': 0.3641, 'accuracy': 0.2969, 'mean_response_length': 73.8, 'kl': 0.163643, 'loss': -0.136309}\n"}
+,{"stream_name":"stdout","time":3833.671872348,"data":"{'step': 168, 'mean_reward': 0.3578, 'accuracy': 0.2969, 'mean_response_length': 81.0, 'kl': 0.165872, 'loss': 0.054538}\n"}
+,{"stream_name":"stdout","time":3851.360154826,"data":"{'step': 169, 'mean_reward': 0.5156, 'accuracy': 0.4688, 'mean_response_length': 78.0, 'kl': 0.307643, 'loss': -0.073351}\n"}
+,{"stream_name":"stdout","time":3882.489479994,"data":"{'step': 170, 'mean_reward': 0.5609, 'accuracy': 0.5156, 'mean_response_length': 79.9, 'kl': 0.154664, 'loss': -0.014355}\n"}
+,{"stream_name":"stdout","time":3899.456015314,"data":"{'step': 171, 'mean_reward': 0.5484, 'accuracy': 0.5, 'mean_response_length': 61.5, 'kl': 0.154352, 'loss': 0.007443}\n"}
+,{"stream_name":"stdout","time":3920.74005888,"data":"{'step': 172, 'mean_reward': 0.4906, 'accuracy': 0.4375, 'mean_response_length': 72.7, 'kl': 0.142633, 'loss': -0.078488}\n"}
+,{"stream_name":"stdout","time":3940.31074143,"data":"{'step': 173, 'mean_reward': 0.4906, 'accuracy': 0.4375, 'mean_response_length': 63.0, 'kl': 0.15629, 'loss': -0.072835}\n"}
+,{"stream_name":"stdout","time":3963.648762425,"data":"{'step': 174, 'mean_reward': 0.5625, 'accuracy': 0.5156, 'mean_response_length': 73.0, 'kl': 0.158102, 'loss': -0.074049}\n"}
+,{"stream_name":"stdout","time":3988.737764673,"data":"{'step': 175, 'mean_reward': 0.4703, 'accuracy': 0.4219, 'mean_response_length': 66.4, 'kl': 0.186634, 'loss': -0.030192}\n"}
+,{"stream_name":"stdout","time":4010.012261204,"data":"{'step': 176, 'mean_reward': 0.5156, 'accuracy': 0.4688, 'mean_response_length': 70.5, 'kl': 0.153992, 'loss': -0.081969}\n"}
+,{"stream_name":"stdout","time":4035.025165973,"data":"{'step': 177, 'mean_reward': 0.5312, 'accuracy': 0.4844, 'mean_response_length': 67.1, 'kl': 0.177152, 'loss': -0.007399}\n"}
+,{"stream_name":"stdout","time":4054.04785535,"data":"{'step': 178, 'mean_reward': 0.35, 'accuracy': 0.2812, 'mean_response_length': 64.1, 'kl': 0.215799, 'loss': 0.03108}\n"}
+,{"stream_name":"stdout","time":4087.238871039,"data":"{'step': 179, 'mean_reward': 0.5625, 'accuracy': 0.5156, 'mean_response_length': 61.9, 'kl': 0.215496, 'loss': -0.008266}\n"}
+,{"stream_name":"stdout","time":4103.462454383,"data":"{'step': 180, 'mean_reward': 0.7141, 'accuracy': 0.6875, 'mean_response_length': 54.0, 'kl': 0.199958, 'loss': 0.008628}\n"}
+,{"stream_name":"stdout","time":4119.663244095,"data":"{'step': 181, 'mean_reward': 0.5031, 'accuracy': 0.4531, 'mean_response_length': 55.4, 'kl': 0.158335, 'loss': -0.03952}\n"}
+,{"stream_name":"stdout","time":4142.531301207,"data":"{'step': 182, 'mean_reward': 0.6281, 'accuracy': 0.5938, 'mean_response_length': 60.3, 'kl': 0.163677, 'loss': -0.082948}\n"}
+,{"stream_name":"stdout","time":4161.34860658,"data":"{'step': 183, 'mean_reward': 0.5922, 'accuracy': 0.5469, 'mean_response_length': 62.4, 'kl': 0.155298, 'loss': -0.047352}\n"}
+,{"stream_name":"stdout","time":4194.563926252,"data":"{'step': 184, 'mean_reward': 0.6453, 'accuracy': 0.6094, 'mean_response_length': 64.8, 'kl': 0.167276, 'loss': -0.033469}\n"}
+,{"stream_name":"stdout","time":4217.629913507,"data":"{'step': 185, 'mean_reward': 0.6141, 'accuracy': 0.5781, 'mean_response_length': 64.5, 'kl': 0.140135, 'loss': -0.092395}\n"}
+,{"stream_name":"stdout","time":4242.528415231,"data":"{'step': 186, 'mean_reward': 0.4656, 'accuracy': 0.4062, 'mean_response_length': 61.0, 'kl': 0.210556, 'loss': -0.007911}\n"}
+,{"stream_name":"stdout","time":4268.049345471,"data":"{'step': 187, 'mean_reward': 0.4781, 'accuracy': 0.4219, 'mean_response_length': 67.6, 'kl': 0.172202, 'loss': -0.01517}\n"}
+,{"stream_name":"stdout","time":4297.155490712,"data":"{'step': 188, 'mean_reward': 0.6047, 'accuracy': 0.5625, 'mean_response_length': 55.2, 'kl': 0.16458, 'loss': -0.000628}\n"}
+,{"stream_name":"stdout","time":4316.133810396,"data":"{'step': 189, 'mean_reward': 0.4891, 'accuracy': 0.4375, 'mean_response_length': 61.5, 'kl': 0.153328, 'loss': -0.043832}\n"}
+,{"stream_name":"stdout","time":4335.584577507,"data":"{'step': 190, 'mean_reward': 0.5047, 'accuracy': 0.4531, 'mean_response_length': 55.8, 'kl': 0.278309, 'loss': 0.030837}\n"}
+,{"stream_name":"stdout","time":4352.283276503,"data":"{'step': 191, 'mean_reward': 0.3906, 'accuracy': 0.3281, 'mean_response_length': 58.1, 'kl': 0.172084, 'loss': -0.046124}\n"}
+,{"stream_name":"stdout","time":4371.021399893,"data":"{'step': 192, 'mean_reward': 0.8, 'accuracy': 0.7812, 'mean_response_length': 59.1, 'kl': 0.231953, 'loss': -0.083739}\n"}
+,{"stream_name":"stdout","time":4394.982961501,"data":"{'step': 193, 'mean_reward': 0.7016, 'accuracy': 0.6719, 'mean_response_length': 60.1, 'kl': 0.165621, 'loss': -0.061943}\n"}
+,{"stream_name":"stdout","time":4413.709330955,"data":"{'step': 194, 'mean_reward': 0.4062, 'accuracy': 0.3438, 'mean_response_length': 53.6, 'kl': 0.165675, 'loss': -0.014258}\n"}
+,{"stream_name":"stdout","time":4431.528505748,"data":"{'step': 195, 'mean_reward': 0.6344, 'accuracy': 0.5938, 'mean_response_length': 59.6, 'kl': 0.162934, 'loss': 0.021636}\n"}
+,{"stream_name":"stdout","time":4460.419585074,"data":"{'step': 196, 'mean_reward': 0.5328, 'accuracy': 0.4844, 'mean_response_length': 69.7, 'kl': 0.1754, 'loss': -0.02467}\n"}
+,{"stream_name":"stdout","time":4473.80979805,"data":"{'step': 197, 'mean_reward': 0.4625, 'accuracy': 0.4062, 'mean_response_length': 53.3, 'kl': 0.159166, 'loss': -0.047306}\n"}
+,{"stream_name":"stdout","time":4487.840728033,"data":"{'step': 198, 'mean_reward': 0.4656, 'accuracy': 0.4062, 'mean_response_length': 58.3, 'kl': 0.188866, 'loss': -0.030937}\n"}
+,{"stream_name":"stdout","time":4506.819654318,"data":"{'step': 199, 'mean_reward': 0.3641, 'accuracy': 0.2969, 'mean_response_length': 55.6, 'kl': 0.146235, 'loss': 0.010063}\n"}
+,{"stream_name":"stdout","time":4525.549507298,"data":"{'step': 200, 'mean_reward': 0.3359, 'accuracy': 0.2656, 'mean_response_length': 57.2, 'kl': 0.163577, 'loss': -0.00968}\n"}
+,{"stream_name":"stdout","time":4527.016597997,"data":"training wall time: 4405 s\n"}
+,{"stream_name":"stderr","time":4528.947743976,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4528.947770822,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4529.179126457,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4529.179151504,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4530.003436818,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4530.882616087,"data":"[NbConvertApp] Writing 281974 bytes to __results__.html\n"}
+]

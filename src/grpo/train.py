@@ -118,6 +118,8 @@ def train(cfg):
     device, dtype = pick_device()
     start_step, ckpt_path = latest_checkpoint(run_dir)
     base, tokenizer = load_model(config.MODEL_PATH, device, dtype)
+    # LoRA's A matrix starts random. Seed it, so two runs with the same seed start from the same weights.
+    torch.manual_seed(cfg.seed)
     model = add_lora(base, cfg, ckpt_path)
     optimizer = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad],
                                   lr=cfg.learning_rate, weight_decay=0.0)
